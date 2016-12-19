@@ -1,0 +1,76 @@
+.icon_black {
+    width: 1em; height: 1em;
+    vertical-align: text-top;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 20px;
+    color:#000000
+}
+
+#main .main_top{height:82px}
+#main .main_top h2{width:150px;height: 82px;float:left;line-height: 82px;font-size: 16px;font-weight: 600}
+#main .flow{width:364px;height: 82px;float:right}
+#main .flow dt{height: 50px;background: url("../img/cart/flow.jpg") no-repeat left bottom 4px}
+#main .flow dd{height: 32px;}
+#main .flow dd li{float:left;height: 32px;width:33.33%;font-size: 12px;font-weight: 600}
+#main .flow dd li:nth-of-type(2){text-align: center;color:#9f9c99}
+#main .flow dd li:nth-of-type(3){text-align: right;color:#9f9c99}
+/*  main_mid  */
+#main .main_mid{background: #000000;color:#ffffff;width:100%;height:32px;overflow: hidden}
+#main .caption{height:32px;line-height: 32px;text-align: center;font-weight: 600}
+#main .caption div{float:left;}
+#main .caption div:nth-of-type(1){width:35%}
+#main .caption div:nth-of-type(2){width:15%}
+#main .caption div:nth-of-type(3){width:15%}
+#main .caption div:nth-of-type(4){width:15%}
+#main .caption div:nth-of-type(5){width:20%}
+#main .colorspace{height:34px;background: #f8f8f8}
+/*  商品  */
+#main .pdt_list{width:998px;border:1px solid #cccccc;overflow: hidden}
+#main .pdt-box{height:80px;border-bottom: 1px solid #cccccc}
+#main .pdt_box ul{width:100%;overflow: hidden}
+#main .pdt_box li{float:left;height: 80px;box-sizing: border-box;border-right:1px solid #cccccc;border-bottom:1px solid #cccccc}
+#main .pdt_box li:nth-of-type(1){width:35%;}
+#main .pdt_box li:nth-of-type(1) input{float:left;margin:35px 12px 0 25px}
+#main .pdt_box li:nth-of-type(1) dl{height:60px;float:left;margin-top:10px;width:290px}
+#main .pdt_box li:nth-of-type(1) dt{width:68px;float: left}
+#main .pdt_box li:nth-of-type(1) dt img{height:60px}
+#main .pdt_box li:nth-of-type(1) dd{float:left;height:40px;margin-top:10px;width:220px}
+#main .pdt_box li:nth-of-type(1) dd p{height:20px;line-height: 20px;color:#99999c;width:100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap}
+#main .pdt_box li:nth-of-type(1) dd p a{color:#4b92a7}
+#main .pdt_box li:nth-of-type(1) dd p i{font-style: normal}
+#main .pdt_box li:nth-of-type(1) dd p em{font-style: normal}
+#main .pdt_box li:nth-of-type(2){width:15%;text-align: center;line-height: 80px}
+#main .pdt_box li:nth-of-type(3){width:15%;text-align: center;line-height: 80px}
+#main .pdt_box li:nth-of-type(3) input{width:12px;height: 12px;border:1px solid #999999;background: #ffffff;line-height: 10px;color:#999999;cursor:pointer}
+#main .pdt_box li:nth-of-type(3) span{width:32px;height: 19px;display:inline-block;margin:0 2px;border:1px solid #999999;line-height: 19px}
+#main .pdt_box li:nth-of-type(4){width:15%;text-align: center;line-height: 80px}
+#main .pdt_box li:nth-of-type(5){width:20%;border-right:0;line-height: 80px}
+#main .pdt_box li:nth-of-type(5) input{padding:2px 6px;background: #ffffff;border:2px solid #999999;cursor:pointer}
+#main .pdt_box li:nth-of-type(5) input:first-of-type{margin-left:40px}
+/*  运费  */
+#main .fee{height:40px;border-bottom:1px solid #cccccc}
+#main .fee_lt{width:200px;float:left;height: 40px;line-height: 40px}
+#main .fee_lt span{background: #6c6c6c;color:#ffffff;display: inline-block;width:46px;height: 16px;border-radius: 3px;line-height: 16px;text-align: center;margin-right: 6px}
+#main .fee_rt{width:200px;height: 40px;line-height: 40px;text-align: right;float:right}
+#main .fee_rt input{vertical-align: text-bottom;margin-right:6px}
+/*  商品结算  */
+#main .check{height:65px;width:100%;box-sizing: border-box;border:1px solid #cccccc;margin:20px 0}
+#main .check_lt{float:left;height: 60px;line-height: 60px;width:272px}
+#main .check_lt li{float:left;padding:0 10px}
+#main .check_lt li input{vertical-align: text-bottom}
+#main .check_lt li a{color:#383e50}
+#main .check_rt{float:right;height: 60px;line-height: 60px;padding-right:20px}
+#main .check_rt span{color:#e8044f;font-size: 18px;font-weight: 600}
+/*  结算或者离开  */
+#main .go_check{height:32px;}
+#main .go_check h2{height: 32px;width:92px;line-height: 32px;box-sizing: border-box;border:1px solid #d1d1d1;font-size:12px;background: #f1f1f1;text-align: center;float:left;border-radius: 4px}
+#main .go_check h2 a{color:#000000}
+#main .go_check h3{height: 32px;width:132px;line-height: 32px;box-sizing: border-box;border:1px solid #d1d1d1;font-size:12px;background: #d80045;text-align: center;float:right;border-radius: 4px}
+#main .go_check h3 a{color:#ffffff}
+
+/*  more  */
+#more{width:1000px;margin:30px auto;height:548px}
+
+
+

@@ -1,0 +1,46 @@
+html,body,p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,form,input,fieldset,legend{margin:0;padding: 0}
+body{font-size:12px;font-family: Arial,"Microsoft YaHei"}
+li{list-style-type: none}
+img{border:0;}
+.left{float: left}
+.right{float: right}
+a{text-decoration: none}
+input:focus{outline: none}
+
+#main_wrap{height:652px;}
+#main{height: 652px;}
+#main .main_left{width:498px;height: 418px;margin-top: 128px; border-right:1px solid #dfdfdf;overflow: hidden;}
+#main .main_left .img{width:252px;height: 190px;margin-left:84px;margin-top: 100px}
+#main .main_right{width:500px;position: relative;padding-top:129px}
+#main .qrcode{width:272px;height: 38px;position: relative;margin-left:100px}
+#main .qrcode h2{width:38px;height: 38px;position: absolute;top:0;right:0;background: url("../img/bg_icon.png") no-repeat -351px -90px}
+#main .qrcode h2:hover{cursor: pointer}
+#main .main_right ul{ width:472px;height:418px;position: absolute;top:100%;left:0}
+#main li{height: 72px;line-height: 72px;font-size: 18px;font-weight: 600;position: relative}
+#main li input{width:240px;height:45px;border:1px solid #dbdbdb;padding-left:10px;font-size: 14px;}
+#main li p{width:180px;height: 20px;display: block;position: absolute;top:30px;left:270px;font-size: 12px;font-weight: 100;line-height: 20px;display:none}
+#main li p span{display: inline-block;width:12px;height: 12px;background: url("../img/bg_icon.png") no-repeat -523px -30px;vertical-align: text-top}
+#main li p em{font-style: normal;color:#ff0000}
+/*#main .sign_bt{background: #ff1901;color:#ffffff;font-size:18px;font-weight: 600;border-color: #ff1901}*/
+#main li input.sign_bt{width:250px;height:45px;background: #ff1901;color:#ffffff;font-size:18px;font-weight: 600;border-color: #ff1901}
+#main li.check_li div{width:120px;height: 16px;font-size: 12px;font-weight: 100;line-height: 16px;color:#b9b9b9;float: left;margin-top:10px;margin-bottom: 14px}
+#main li.check_li div input{width:14px;height: 14px;vertical-align: top}
+#main .check_li ol{float:left;height:12px;margin-top:10px}
+#main .check_li ol li{padding:0 6px;height: 16px;line-height: 16px;font-size: 12px;font-weight: 100;float: left}
+#main .check_li ol li a{color:#b9b9b9}
+#main .check_li h3{clear:both;height:30px;line-height: 30px}
+#main h3 span{width:30px;height: 30px;display: inline-block;margin:0 5px}
+#main h3 span:nth-of-type(1){background: url("../img/bg_icon.png") no-repeat -497px -58px}
+#main h3 span:nth-of-type(2){background: url("../img/bg_icon.png") no-repeat -465px -58px}
+#main h3 span:nth-of-type(3){background: url("../img/bg_icon.png") no-repeat -529px -58px}
+#main h3 span:nth-of-type(4){background: url("../img/bg_icon.png") no-repeat -433px -58px}
+#main h3 span:nth-of-type(5){background: url("../img/bg_icon.png") no-repeat -391px -90px}
+#main h3 span:nth-of-type(6){background: url("../img/bg_icon.png") no-repeat -423px -90px}
+/*  扫码登录  */
+#main .scran_sign{width:272px;height:418px;position: absolute;top:100%;left:0;display: none}
+#main .scran_sign h4{font-size: 14px;font-weight: 600;width:160px;height: 70px;line-height: 70px;margin:0 auto;text-indent: 12px}
+#main .scran_sign h5{text-align: center;height: 160px}
+#main .scran_sign h6{width:190px;height:48px;margin:0 auto;font-weight: 100;color: #9b9b9b;margin-top:10px}
+#main .scran_sign h6 span{float:left;width:29px;height: 27px;display: block;background: url("../img/bg_icon.png") no-repeat -459px -29px;margin-right:16px;margin-top:2px}
+#main .scran_sign .download_yoho{width:200px;margin:0 auto;height:20px;clear:both}
+#main .scran_sign .download_yoho a{color:#ff003a}

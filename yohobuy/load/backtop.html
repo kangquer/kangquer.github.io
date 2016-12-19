@@ -1,0 +1,31 @@
+<div id="back_top">
+    <a href="javascript:void(0)">
+        <svg class="icon_top" aria-hidden="true">
+            <use xlink:href="#icon-top"></use>
+        </svg>
+    </a>
+</div>
+<script src="../js/jquery.easing.1.3.js"></script>
+<script>
+    $(document).scroll(function(){
+
+        var $top = $(this).scrollTop();
+        //$("title").text($top);
+        if ($top >= 100) {
+            $("#back_top").fadeIn(600); //淡入 导航慢慢显示出来
+        }else{
+            $("#back_top").fadeOut(300); //淡出 导航慢慢消失
+        }
+        if($top>=4620){
+            $("#back_top").css({"background":"#000000"});
+        }else{
+            $("#back_top").css({"background":"#808080"});
+        }
+    });
+    $("#back_top").click(function(){
+        $("body,html").stop(true,false).animate({
+            scrollTop: 0
+        }, 600,"easeOutExpo");
+    });
+    console.log($("#footer_wrap").offset().top);
+</script>

@@ -1,0 +1,135 @@
+html,body,p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,form,input,fieldset,legend{margin:0;padding: 0}
+body{font-size:12px;font-family: Arial,"Microsoft YaHei"}
+li{list-style-type: none}
+img{border:0;}
+.left{float: left}
+.right{float: right}
+a{text-decoration: none;}
+input:focus{outline: none}
+
+/*  Width  */
+#ads_wrap,#tool_wrap,#head_wrap,#nav_wrap,#banner_wrap,#contract_wrap,
+#footer_wrap{width:100%}
+#ads,#tool,#head,#nav,#banner,#sub_banner,#logo_brand,
+#fashion,#classic_shoes,#abroad,#relax,#new_brand,#hot,
+#new_arrivals,#contract,.subnav_main,#footer{width:1150px;margin:0 auto}
+/*  ads  */
+#ads_wrap{height:36px;background: url("../img/girl_index/ads.jpg");background-size: cover}
+/*  tool  */
+#tool_wrap{height:32px;background-color: #f4f4f4}
+#tool{height:32px }
+/* sorts group */
+#tool .group{height:32px;line-height: 32px;padding-left: 20px;padding-right: 6px;position: relative;background: url(../img/girl_index/group_span.png) no-repeat left center}
+#tool .group:hover{cursor: pointer}
+#tool .group a{color:#000000}
+#tool .group_list{width:190px;height: 205px;background: #f4f4f4;position: absolute;left: 0;top:32px;z-index: 30;display: none}
+#tool .group_list li{height: 40px;line-height: 40px;padding-left: 20px}
+#tool .group_list a{color:#9196a0;font-size: 14px}
+/*  sign and more  */
+#tool .sign{height: 32px}
+#tool li{height: 32px;line-height: 32px;}
+#tool .borderline{width:0;height:12px;border-left:1px solid #dcdcdc;margin-top: 10px}
+#tool a{color:#8e8e8e}
+#tool .sign_box{padding:0 10px}
+#tool .sign_box p:nth-of-type(2){display: none;text-align: center}
+#tool .myYoho{padding:0 24px 0 12px;background: url("../img/girl_index/myYoho.gif") no-repeat right 10px top 15px }
+#tool .myYoho:hover{background-color:#dcdcdc}
+#tool .myOrder{padding:0 10px 0 24px;background: url("../img/girl_index/myOrder.jpg") no-repeat 12px 8px}
+#tool .myStars{padding: 0 10px 0 26px;background: url("../img/girl_index/mystars.jpg") no-repeat 12px 10px}
+#tool .news{padding:0 10px 0 30px;background: url("../img/girl_index/news.jpg") no-repeat 12px 11px}
+#tool .phone_yoho{padding:0 10px 0 24px;background: url("../img/girl_index/phone_yoho.png") no-repeat 12px 8px;position: relative}
+#tool .phone_yoho .qr_code{width:230px;height: 290px;background: #f8f8f8;position: absolute;top:32px;left: -100px;display: none;z-index: 100}
+#tool .phone_yoho .qr_code .qrbox{width:100%;height: 142px;margin-top: 32px;text-align: center;margin-bottom: 16px}
+#tool .phone_yoho .qr_pre{text-align: center;font-size:16px;font-weight: 600;height:26px;line-height: 26px}
+#tool .phone_yoho .qr_more{height:30px;line-height: 30px;text-align: center;font-size: 13px;font-weight: 600}
+#tool .phone_yoho .qr_more a{color:#949494}
+/*  head  */
+#head_wrap{height:90px}
+#head{height: 90px;position: relative}
+/*  head_lt  */
+#head .head_lt{height:46px;position: absolute;left:0;bottom:0}
+#head li{padding:0 22px;height: 46px}
+#head .boy{padding-left:16px}
+#head .girl{background:#ff88ae;color:#ffffff }
+#head .girl h3{color:#ffffff}
+#head h2{font-size: 16px;text-align: center;height: 20px;line-height: 30px;font-weight: 100;font-family: Simhei}
+#head h3{color:#8e8e8e;height: 14px;line-height: 24px;font-weight: 100;font-size: 12px}
+/*  head_center  */
+#head .head_ct{width:171px;height: 40px;position: absolute;left:42.53%;top:28px}
+/*  head_rt  */
+#head .head_rt{width:396px;height: 30px;position:absolute;right:0;top:45px}
+#head .search_box{width:322px;height:30px;margin-right:25px}
+#head .srh_in{width:230px;height: 28px;border:1px solid #ff88ae;}
+#head .srh_btn{width:80px;height:30px;border:0;background:#ff88ae url(../img/girl_index/search.png) no-repeat 32px 7px}
+#head .go_cart{width:30px;height: 30px;position: relative;background: url("../img/girl_index/cart_img.png") no-repeat center}
+#head .cart_num{width:27px;height: 20px;display: block;background: url("../img/girl_index/ic-information.png") no-repeat;position: absolute;left:20px;top:-10px;color:#ffffff;text-align: center;line-height: 20px;font-weight: 600}
+#head .cart_detail{width:378px;height: 541px;position: absolute;top:30px;right:-19px;background: #f8f8f8 url(../img/girl_index/empty_car.png) no-repeat 108px 132px;z-index: 30;display: none}
+#head .cart_detail p.empty_cart{height:16px;font-size: 16px;text-align: center;margin-top: 280px;display: none}
+#head .cart_detail .sub_cart{width:378px;height: 541px;background: #f8f8f8;color:#000000}
+#head .cart_top{width:90%;height: 476px;border-bottom: 1px solid #dcdcdc;margin:0 auto;overflow-y: scroll}
+#head .cart_top dl{width:100%;height:66px;margin:6px auto;}
+#head .cart_top dt{float:left;width:45px;height: 66px}
+#head .cart_top dd:nth-of-type(1){width:159px;padding-left: 10px;height: 66px;float:left}
+#head .cart_top dd:nth-of-type(2){width:90px;height:66px;float:left}
+#head .cart_top dd p{width:100%;height: 30px;line-height: 30px;text-align: right;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color:#666666}
+#head .cart_top dd p:last-of-type{line-height: 20px}
+#head .cart_top dd p.first{text-align: left}
+#head .cart_bot{width:100%;height: 64px;text-align: center;line-height: 64px}
+#head .cart_bot a{color:#000000;font-size: 14px}
+/*  nav  */
+#nav_wrap{height:40px;background: #ff88ae;position: relative}
+#nav{height:40px;font-family: Simhei;font-size: 14px}
+#nav li{height:40px;line-height: 40px;width:6.55%;margin-right:4.551%;text-align: center;position: relative}
+#nav a{color:#ffffff;display: inline-block;border:0;line-height:20px;}
+#nav a:hover{border-bottom:2px solid #ffffff}
+#nav .subnav_main{height: 410px;overflow: hidden;position: absolute;top:100%;left:-339%;z-index: 200;background:#f8f8f8;display: none }
+#nav li:nth-of-type(4) .subnav_main{left:-509%}
+#nav li:nth-of-type(5) .subnav_main{left:-678%}
+#nav li:nth-of-type(6) .subnav_main{left:-848%}
+#nav .subnav_main .clothes_lt{height:350px;margin-top:30px;width:789px}
+#nav .subnav_main dl{width:229px;height:350px;border-right:1px solid #cccccc;text-align: left}
+#nav .subnav_main dt{height:48px;line-height: 48px;border-bottom: 1px solid #000000;width:180px}
+#nav .subnav_main dd{height:36px;line-height: 36px;width:180px;text-align: left}
+#nav .subnav_main a{color:#000000}
+#nav .subnav_main .dd_red{color:#ff0000}
+#nav .subnav_main .clothes_rt{height:350px;margin-top:30px;width: 337px}
+#nav .subnav_main p{text-align: center;height:100px;line-height: 100px;width:100%}
+#nav .subnav_main p a{color:#000000;}
+
+
+/*  footer  */
+#footer_wrap{height: 294px;background: #000000}
+#footer{height: 294px;background: #000000}
+#footer .footer_top{height: 64px;border-bottom:1px solid #262626}
+#footer .footer_top li{float:left;height:64px;line-height: 64px;padding-right:60px;color:#ffffff;font-weight:600 }
+#footer .footer_top li span{color:#ff0000}
+#footer .footer_top li img{width:30px;vertical-align: middle}
+#footer .fo_top_rt{width:230px;padding-left:10px;height: 36px;line-height: 36px;float:right;border:1px solid #262626;margin-top:14px;color:#666666;font-weight: 600}
+#footer .footer_mid{height: 148px;overflow: hidden}
+#footer dl{width:14.285%;float:left;}
+#footer dt{height:32px;line-height: 32px;padding-left:40px}
+#footer dt a{color:#ffffff;font-weight: 600}
+#footer dt a:hover{color:#ff3a3a}
+#footer dd{height:28px;line-height: 28px;padding-left:40px}
+#footer dd a{color:#666666;font-weight: 600}
+#footer dd a:hover{color:#ff3a3a}
+#footer .footer_bot{height: 81px;position: relative ;overflow: hidden;color:#666666}
+#footer .footer_bot img{position: absolute;top:20px;left:20px}
+#footer .footer_bot ul{width:665px;height:12px;position: absolute;top:20px;left: 168px}
+#footer .footer_bot ul li{height:12px;border-right:1px solid #666666;padding:0 20px;float:left}
+#footer .footer_bot ul li a{color:#666666}
+#footer .footer_bot p{width:770px;height:20px;line-height:20px;text-align: center;position: absolute;top:42px;left:168px}
+
+
+
+/*  back top  */
+#back_top{width:60px;height:60px;background: #808080;position: fixed;right:20px;bottom:20px;line-height: 60px;text-align: center;display: none}
+.icon_top {
+    width: 1em; height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 30px;
+    font-size: 30px;
+    color:#ffffff
+}

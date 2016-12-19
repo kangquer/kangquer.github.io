@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monster Guardians 女裤黑色紧身长裤</title>
+    <link rel="shortcut icon" href="../avatar.ico">
+    <link rel="stylesheet" href="../css/headerbase.css">
+    <link rel="stylesheet" href="../css/item.css">
+    <script src="//at.alicdn.com/t/font_w2ld9wqncv4bcsor.js"></script>
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/template.js"></script>
+</head>
+<body>
+    <div id="load"></div>
+    <!--  brand  -->
+    <div id="logo_wrap">
+        <div id="logo">
+            <h2><a href="list.html"><img src="../img/item/logo.png" alt=""></a></h2>
+            <dl>
+                <dt>
+                    <a href="list.html">
+                        <svg class="icon_white" aria-hidden="true">
+                            <use xlink:href="#icon-home"></use>
+                        </svg>
+                    </a>
+                </dt>
+                <dt>
+                    <a href="list.html">
+                        <svg class="icon_white" aria-hidden="true">
+                            <use xlink:href="#icon-love"></use>
+                        </svg>
+                    </a>
+                </dt>
+            </dl>
+        </div>
+    </div>
+    <!--  details  -->
+    <div id="details">
+        <div class="dls_top">
+            <ul>
+                <li><a href="list.html">GIRLS首页 ></a></li>
+                <li><a href="list.html">裤装 ></a></li>
+                <li><a href="list.html">打底裤/紧身裤 ></a></li>
+                <li> Monster Guardians 女裤黑色紧身长裤</li>
+            </ul>
+        </div>
+        <div class="dls_main"> </div>
+            <script id="pdt_items" type="text/html">
+               <div class="dls_main_lt">
+                    <dl>
+                        <dt>
+                            <img class="dls_img" src="../img/item/id{{id}}_show_big1.jpg"/>
+                            <div class="mark"></div>
+                            <div class="opa"></div>
+                            <div class="showbox">
+                                <img class="bigimg" src="../img/item/id{{id}}_show_big1.jpg"/>
+                            </div>
+                        </dt>
+                        <dd>
+                            <ul>
+                                {{each small_img as simg i}}
+                                <li><a href="javascript:void(0)"><img src={{simg}} alt=""></a></li>
+                               {{/each}}
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="dls_main_rt">
+                    <h3>{{type}}{{name}}</h3>
+                    <p><a href="list.html">{{type}}</a></p>
+                    <p>市场价：<strong>￥{{price}}</strong></p>
+                    <p><span>登陆后即可查看vip价格 &nbsp;&nbsp;</span><a href="signin.html">立即登录</a></p>
+                    <p><a href="//kkstrive.com"><img src="../img/item/vip.jpg" alt=""></a></p>
+                    <p><em>加价购</em>全场￥99元加价购</p>
+                    <p><em>加价购</em>全场￥59元加价购</p>
+                    <p><em>加价购</em>全场￥39元加价购</p>
+                    <p><em>加价购</em>全场满￥399元加￥9元购冷帽</p>
+                    <div class="im_line"></div>
+                    <ul class="user_select">
+                        <li>
+
+                            <span>选颜色：</span>
+                            <span id="imgcart">
+                                 {{each color_img as cimg i}}
+                                <img class="color_pdt" src={{cimg}} title="{{color[i]}}" iscolored="{{attr[i]}}">
+                                {{/each}}
+                            </span>
+
+                        </li>
+                        <li>
+                            <span>选尺码：</span>
+                            <ol id="ruler">
+                                {{each ruler as rl i}}
+                                <li>{{rl}}</li>
+                                {{/each}}
+                            </ol>
+                            <i>尺码帮助</i>
+                        </li>
+                        <li>
+                            <span>选数量：</span>
+                            <div class="buy_num">
+                                <div class="pdt_num">1</div>
+                            <span>
+                                 <svg class="icon_white" aria-hidden="true" style="color:#666;font-size: 10px;font-weight: 600">
+                                     <use xlink:href="#icon-shangjianhao"></use>
+                                 </svg>
+                            </span>
+                            <span>
+                                 <svg class="icon_white" aria-hidden="true" style="color:#666;font-size: 10px;font-weight: 600">
+                                     <use xlink:href="#icon-xiajianhao"></use>
+                                 </svg>
+                            </span>
+                            </div>
+                        </li>
+                        <li>
+                            <h5>
+                                <a id="addCart" href="javascript:void(0)">
+                                    <b>
+                                        <svg class="icon_white" aria-hidden="true">
+                                            <use xlink:href="#icon-gouwuche"></use>
+                                        </svg>
+                                    </b>
+                                    添加到购物车
+                                </a>
+                            </h5>
+                            <h6 id="save"><a href="javascript:void(0)">
+                                <b>
+                                    <svg id="saved" class="icon_grey" aria-hidden="true">
+                                        <use xlink:href="#icon-love"></use>
+                                    </svg>
+                                </b>
+                                <span>收藏商品</span>
+                            </a></h6>
+                        </li>
+                        <li style="line-height: 68px">
+                            <span>分享商品：</span>
+                            <svg class="icon_grey" aria-hidden="true" style="color:#666666" >
+                                <!--  为什么title显示不出来  -->
+                                <use xlink:href="#icon-04" title="微博"></use>
+                            </svg>
+                            <svg class="icon_grey" aria-hidden="true" style="color:#666666">
+                                <use xlink:href="#icon-weixin"></use>
+                            </svg>
+                            <svg class="icon_grey" aria-hidden="true" style="color:#666666">
+                                <use xlink:href="#icon-tengxunweibo"></use>
+                            </svg>
+                            <svg class="icon_grey" aria-hidden="true" style="color:#666666">
+                                <use xlink:href="#icon-qqkongjian"></use>
+                            </svg>
+                            <svg class="icon_grey" aria-hidden="true" style="color:#666666">
+                                <use xlink:href="#icon-qq-copy"></use>
+                            </svg>
+                            <svg class="icon_grey" aria-hidden="true" style="color:#666666">
+                                <use xlink:href="#icon-renrenwang"></use>
+                            </svg>
+                            <svg class="icon_grey" aria-hidden="true" style="color:#666666">
+                                <use xlink:href="#icon-douban"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </script>
+
+    </div>
+    <!--  商品信息  -->
+    <div id="pdt_info">
+        <ul class="info">
+            <li><a class="description" href="javascript:void(0)">商品信息 DESCRIPTION</a></li>
+            <li></li>
+            <li><a class="materials" href="javascript:void(0)">材质洗涤 MATERIALS</a></li>
+        </ul>
+        <div class="pdt_des"></div>
+        <div class="pdt_mts"></div>
+    </div>
+    <!--  size_info  -->
+    <div id="size_info">
+        <a href="javascript:void(0)">尺码信息 SIZE INFO</a>
+        <img src="../img/item/size_info1.png" alt="">
+        <img src="../img/item/size_info2.jpg" alt="">
+    </div>
+    <!--  details_main  -->
+    <div id="details_main">
+        <script id="pdt_imgs" type="text/html">
+            <a href="javascript:void(0)">商品详情 DETAILS</a>
+            {{each show_img as value i}}
+            <img src="../img/item/id{{id}}_details{{i+1}}.jpg" alt="">
+            {{/each}}
+        </script>
+    </div>
+    <!--  consult  -->
+    <div id="consult">
+        <ul class="consult_info">
+            <li><a class="customer" href="javascript:void(0)">顾客咨询（<span>10</span>）</a></li>
+            <li></li>
+            <li><a class="evaluate" href="javascript:void(0)"> 购买评价（<span>10</span>）</a></li>
+        </ul>
+        <div class="ask"></div>
+            <script type="text/html" id="pdt_consult">
+            <h3>顾客咨询(10)</h3>
+            <ul>
+                {{each user_consult as value i}}
+                <li>
+                    <dl>
+                        <dt><img src="../img/kkstrive.png" width="30"></dt>
+                        <dd>
+                            <h6>{{value.ask}}</h6>
+                            <span>{{value.time}}</span>
+                        </dd>
+                    </dl>
+                    <p>{{value.reply}}</p>
+                </li>
+                {{/each}}
+            </ul>
+            <h4>加载全部
+                <svg class="icon_black" aria-hidden="true">
+                    <use xlink:href="#icon-xiajianhao"></use>
+                </svg>
+            </h4>
+            <h5>我要咨询</h5>
+            </script>
+
+        <div class="reply"></div>
+            <script type="text/html" id="pdt_reply">
+                <h3>购买评价(10)</h3>
+                <ul>
+                    {{each user_reply as value i}}
+                    <li>
+                        <dl>
+                            <dt><img src="../img/kkstrive.png" width="30"></dt>
+                            <dd>
+                                <h6>{{value.say}}</h6>
+                                <span>{{value.time}}</span>
+                            </dd>
+                        </dl>
+                        <p>{{value.reply}}</p>
+                    </li>
+                    {{/each}}
+                </ul>
+                <h4>加载全部
+                    <svg class="icon_black" aria-hidden="true">
+                        <use xlink:href="#icon-xiajianhao"></use>
+                    </svg>
+                </h4>
+                <h5>我要评价</h5>
+            </script>
+    </div>
+    <!--  after_saled  -->
+    <div id="after_saled">
+        <h3>
+            售后服务
+            <svg class="icon_black" aria-hidden="true">
+                <use id="after_ser" xlink:href="#icon-sanjiao"></use>
+            </svg>
+        </h3>
+        <div class="after_service">
+            <div class="ser_top">
+                <a href="javascript:void(0)">售后服务 AFTER SERVICE</a>
+            </div>
+            <div class="ser_md"></div>
+            <div class="ser_bot"></div>
+            <div class="ser_details">
+                <h6>退换货承诺</h6>
+                <p>自您签收商品7日内可以退货，15日内可以换货，在商品不影响二次销售的情况下，YOHO!BUY 有货将为您办理退换货服务，请在网站提交"退换货"申请。需要说明的是：非质量问题的退换货，来回运费由您承担。</p>
+                <h6>退换货方式</h6>
+                <p>针对国内大中型城市，YOHO!BUY 有货开通了<i>"上门换货"</i>服务，上门服务区域及费用请联系客服中心；若您所在的区域不在上门换货范围内，请您选择普通快递将商品、内包装、赠品及发货单等一并寄回。质量问题的退换货，目前不支持运费到付款业务，请您先垫付运费寄回。如需退换货，请致电客服电话：400-889-9646。 </p>
+                <h6>退换货邮寄地址</h6>
+                <p>南京市江宁区江宁经济技术开发区苏源大道87号YOHO!BUY 有货物流中心东一楼 收件人：YOHO!BUY 有货 邮编：211106 </p>
+                <p>YOHO! 有货客服热线：400-889-9646　　客服邮箱：<a href="mailto:service@yoho.cn">service@yoho.cn</a></p>
+                <p>有疑问请联系我们，我们将为您提供最优质的产品和服务。 </p>
+            </div>
+        </div>
+        <div class="service"></div>
+    </div>
+    <div id="viewd">
+        <a class="hah" href="javascript:void(0)">最近浏览 RECENT REVIEW</a>
+        <div class="viewd_main">
+          <dl>
+              <dt><a href="javascript:void(0)"><img src="../img/item/viewd.jpg" alt=""></a></dt>
+              <dd><a href="javascript:void(0)">oh my girl 条纹刺绣衬衫</a></dd>
+              <dd><b>¥139.00</b></dd>
+          </dl>
+            <dl>
+                <dt><a href="javascript:void(0)"><img src="../img/item/viewd2.jpg" alt=""></a></dt>
+                <dd><a href="javascript:void(0)">THETHING KIDS 女潮童105-140码涂鸦印花卫衣</a></dd>
+                <dd><del>¥368.00 </del>&nbsp;&nbsp; <b> ¥184.00</b></dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:void(0)"><img src="../img/item/viewd3.jpg" alt=""></a></dt>
+                <dd><a href="javascript:void(0)">RIGEL DAVIS 扣环黑色牛仔夹克</a></dd>
+                <dd><del>¥599.00 </del>&nbsp;&nbsp; <b> ¥169.00</b></dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:void(0)"><img src="../img/item/viewd4.jpg" alt=""></a></dt>
+                <dd><a href="javascript:void(0)">Juni&Juli 女士百搭条纹针织连衣裙</a></dd>
+                <dd><del>¥399.00 </del>&nbsp;&nbsp; <b> ¥199.00</b></dd>
+            </dl>
+        </div>
+    </div>
+    <div id="footer_wrap"></div>
+    <div id="back_top_wrap"></div>
+    <script src="../js/item.js"></script>
+</body>
+</html>

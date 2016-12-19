@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>template</title>
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+    <script src="../js/template.js"></script>
+    <style>
+        .sea{float:left}
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+   <ul>
+       <li>1</li>
+       <li>2</li>
+   </ul>
+    <script id="DEMO" type="text/html">
+        {{each demo as content i}}
+      <div class="sea">
+          <img src={{content.src}} alt="">
+          <p>{{content.type}}</p>
+          <p>{{content.price}}</p>
+      </div>
+        {{/each}}
+    </script>
+    <script>
+        get(0);
+       function get(num){
+           $.ajax("test.json",{
+               success:function(data){
+                   console.log(data);
+                   var htmlcon = template("DEMO",data[num]);
+                   $(".box").html(htmlcon);
+               }
+           });
+       }
+        $("li").click(function(){
+            var index = $(this).index();
+            //alert(index);
+            get(index);
+        });
+    </script>
+</body>
+</html>

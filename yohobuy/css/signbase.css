@@ -1,0 +1,57 @@
+html,body,p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,form,input,fieldset,legend{margin:0;padding: 0}
+body{font-size:12px;font-family: Arial,"Microsoft YaHei"}
+li{list-style-type: none}
+img{border:0;}
+.left{float: left}
+.right{float: right}
+a{text-decoration: none}
+input:focus{outline: none}
+
+#nav_wrap,#main_wrap,#footer_wrap{width:100%}
+#nav,#main,#footer{width:1000px;margin:0 auto}
+/*  nav  */
+#nav_wrap{height: 66px;border-bottom:2px solid #222222}
+#nav{height: 66px}
+#nav h1{width:171px;height:40px;float:left;margin-top:10px}
+#nav li{padding:0 10px;height:28px;line-height: 28px;margin-top:19px;position: relative}
+#nav .sign_box{padding:0 10px}
+#nav .sign_box p:nth-of-type(2){display: none;text-align: center}
+#nav .to_bot{padding-right:20px;background: url("../img/girl_index/to_bot.png") no-repeat right 4px top 8px}
+#nav li a{color:#000000;font-weight: 600;text-decoration: none}
+#nav ol{width:75px;height: 58px;position: absolute;top:100%;left:0;display: none;z-index: 100}
+#nav ol li{margin-top:0;background:#eaeceb;height:28px;line-height: 28px;text-align: center;border-top:1px solid #dddddd;}
+
+/*  footer  */
+#footer_wrap{height: 294px;background: #000000}
+#footer{height: 294px;background: #000000}
+#footer .footer_top{height: 64px;border-bottom:1px solid #262626}
+#footer .footer_top li{float:left;height:64px;line-height: 64px;padding-right:60px;color:#ffffff;font-weight:600 }
+#footer .footer_top li span{color:#ff0000}
+#footer .footer_top li img{width:30px;vertical-align: middle}
+#footer .fo_top_rt{width:230px;padding-left:10px;height: 36px;line-height: 36px;float:right;border:1px solid #262626;margin-top:14px;color:#666666;font-weight: 600}
+#footer .footer_mid{height: 148px;overflow: hidden}
+#footer dl{width:14.285%;float:left;}
+#footer dt{height:32px;line-height: 32px;padding-left:40px}
+#footer dt a{color:#ffffff;font-weight: 600}
+#footer dt a:hover{color:#ff3a3a}
+#footer dd{height:28px;line-height: 28px;padding-left:40px}
+#footer dd a{color:#666666;font-weight: 600}
+#footer dd a:hover{color:#ff3a3a}
+#footer .footer_bot{height: 81px;position: relative ;overflow: hidden;color:#666666}
+#footer .footer_bot img{position: absolute;top:20px;left:20px}
+#footer .footer_bot ul{width:665px;height:12px;position: absolute;top:20px;left: 168px}
+#footer .footer_bot ul li{height:12px;border-right:1px solid #666666;padding:0 20px;float:left}
+#footer .footer_bot ul li a{color:#666666}
+#footer .footer_bot p{width:770px;height:20px;line-height:20px;text-align: center;position: absolute;top:42px;left:168px}
+
+/*  back top  */
+#back_top{width:60px;height:60px;background: #808080;position: fixed;right:20px;bottom:20px;line-height: 60px;text-align: center;display: none}
+.icon_top {
+    width: 1em; height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 30px;
+    font-size: 30px;
+    color:#ffffff
+}

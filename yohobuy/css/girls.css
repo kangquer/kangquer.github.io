@@ -1,0 +1,275 @@
+html,body,p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,form,input,fieldset,legend{margin:0;padding: 0}
+body{font-size:12px;font-family: Arial,"Microsoft YaHei"}
+li{list-style-type: none}
+img{border:0;}
+.left{float: left}
+.right{float: right}
+a{text-decoration: none}
+input:focus{outline: none}
+
+/*  font-face  */
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 30px;
+    color:#ff88ae
+}
+/*  Width  */
+#ads_wrap,#tool_wrap,#head_wrap,#nav_wrap,#banner_wrap,#contract_wrap,
+#footer_wrap{width:100%}
+#ads,#tool,#head,#nav,#banner,#sub_banner,#logo_brand,
+#fashion,#classic_shoes,#abroad,#relax,#new_brand,#hot,
+#new_arrivals,#contract,.subnav_main,#footer{width:1150px;margin:0 auto}
+/*  ads  */
+#ads_wrap{height:36px;background: url("../img/girl_index/ads.jpg");background-size: cover}
+/*  tool  */
+#tool_wrap{height:32px;background-color: #f4f4f4}
+#tool{height:32px }
+/* sorts group */
+#tool .group{height:32px;line-height: 32px;padding-left: 20px;padding-right: 6px;position: relative;background: url(../img/girl_index/group_span.png) no-repeat left center}
+#tool .group:hover{cursor: pointer}
+#tool .group a{color:#000000}
+#tool .group_list{width:190px;height: 205px;background: #f4f4f4;position: absolute;left: 0;top:32px;z-index: 30;display: none}
+#tool .group_list li{height: 40px;line-height: 40px;padding-left: 20px}
+#tool .group_list a{color:#9196a0;font-size: 14px}
+/*  sign and more  */
+#tool .sign{height: 32px}
+#tool li{height: 32px;line-height: 32px;}
+#tool .borderline{width:0;height:12px;border-left:1px solid #dcdcdc;margin-top: 10px}
+#tool a{color:#8e8e8e}
+#tool .sign_box{padding:0 10px}
+#tool .sign_box p:nth-of-type(2){display: none;text-align: center}
+#tool .myYoho{padding:0 24px 0 12px;background: url("../img/girl_index/myYoho.gif") no-repeat right 10px top 15px }
+#tool .myYoho:hover{background-color:#dcdcdc}
+#tool .myOrder{padding:0 10px 0 24px;background: url("../img/girl_index/myOrder.jpg") no-repeat 12px 8px}
+#tool .myStars{padding: 0 10px 0 26px;background: url("../img/girl_index/mystars.jpg") no-repeat 12px 10px}
+#tool .news{padding:0 10px 0 30px;background: url("../img/girl_index/news.jpg") no-repeat 12px 11px}
+#tool .phone_yoho{padding:0 10px 0 24px;background: url("../img/girl_index/phone_yoho.png") no-repeat 12px 8px;position: relative}
+#tool .phone_yoho .qr_code{width:230px;height: 290px;background: #f8f8f8;position: absolute;top:32px;left: -100px;display: none;z-index: 100}
+#tool .phone_yoho .qr_code .qrbox{width:100%;height: 142px;margin-top: 32px;text-align: center;margin-bottom: 16px}
+#tool .phone_yoho .qr_pre{text-align: center;font-size:16px;font-weight: 600;height:26px;line-height: 26px}
+#tool .phone_yoho .qr_more{height:30px;line-height: 30px;text-align: center;font-size: 13px;font-weight: 600}
+#tool .phone_yoho .qr_more a{color:#949494}
+/*  head  */
+#head_wrap{height:90px}
+#head{height: 90px;position: relative}
+/*  head_lt  */
+#head .head_lt{height:46px;position: absolute;left:0;bottom:0}
+#head li{padding:0 22px;height: 46px}
+#head .boy{padding-left:16px}
+#head .girl{background:#ff88ae;color:#ffffff }
+#head .girl h3{color:#ffffff}
+#head h2{font-size: 16px;text-align: center;height: 20px;line-height: 30px;font-weight: 100;font-family: Simhei}
+#head h3{color:#8e8e8e;height: 14px;line-height: 24px;font-weight: 100;font-size: 12px}
+/*  head_center  */
+#head .head_ct{width:171px;height: 40px;position: absolute;left:42.53%;top:28px}
+/*  head_rt  */
+#head .head_rt{width:396px;height: 30px;position:absolute;right:0;top:45px}
+#head .search_box{width:322px;height:30px;margin-right:25px}
+#head .srh_in{width:240px;height: 28px;border:1px solid #ff88ae;}
+#head .srh_btn{width:80px;height:28px;border:0;background:#ff88ae url(../img/girl_index/search.png) no-repeat 32px 7px}
+#head .go_cart{width:30px;height: 30px;position: relative;background: url("../img/girl_index/cart_img.png") no-repeat center}
+#head .cart_num{width:27px;height: 20px;display: block;background: url("../img/girl_index/ic-information.png") no-repeat;position: absolute;left:20px;top:-10px;color:#ffffff;text-align: center;line-height: 20px;font-weight: 600}
+#head .cart_detail{width:378px;height: 541px;position: absolute;top:30px;right:-19px;background: #f8f8f8 url(../img/girl_index/empty_car.png) no-repeat 108px 132px;z-index: 30;display: none}
+#head .cart_detail p.empty_cart{height:16px;font-size: 16px;text-align: center;margin-top: 280px;display: none}
+#head .cart_detail .sub_cart{width:378px;height: 541px;background: #f8f8f8;color:#000000}
+#head .cart_top{width:90%;height: 476px;border-bottom: 1px solid #dcdcdc;margin:0 auto;overflow-y: scroll}
+#head .cart_top dl{width:100%;height:66px;margin:6px auto;}
+#head .cart_top dt{float:left;width:45px;height: 66px}
+#head .cart_top dd:nth-of-type(1){width:159px;padding-left: 10px;height: 66px;float:left}
+#head .cart_top dd:nth-of-type(2){width:90px;height:66px;float:left}
+#head .cart_top dd p{width:100%;height: 30px;line-height: 30px;text-align: right;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;color:#666666}
+#head .cart_top dd p:last-of-type{line-height: 20px}
+#head .cart_top dd p.first{text-align: left}
+#head .cart_bot{width:100%;height: 64px;text-align: center;line-height: 64px}
+#head .cart_bot a{color:#000000;font-size: 14px}
+/*  nav  */
+#nav_wrap{height:40px;background: #ff88ae;position: relative}
+#nav{height:40px;font-family: Simhei;font-size: 14px}
+#nav li{height:40px;line-height: 40px;width:6.55%;margin-right:4.551%;text-align: center;position: relative}
+#nav a{color:#ffffff;display: inline-block;border:0;line-height:20px;}
+#nav a:hover{border-bottom:2px solid #ffffff}
+#nav .subnav_main{height: 410px;overflow: hidden;position: absolute;top:100%;left:-339%;z-index: 200;background:#f8f8f8;display: none }
+#nav li:nth-of-type(4) .subnav_main{left:-509%}
+#nav li:nth-of-type(5) .subnav_main{left:-678%}
+#nav li:nth-of-type(6) .subnav_main{left:-848%}
+#nav .subnav_main .clothes_lt{height:350px;margin-top:30px;width:789px}
+#nav .subnav_main dl{width:229px;height:350px;border-right:1px solid #cccccc;text-align: left}
+#nav .subnav_main dt{height:48px;line-height: 48px;border-bottom: 1px solid #000000;width:180px}
+#nav .subnav_main dd{height:36px;line-height: 36px;width:180px;text-align: left}
+#nav .subnav_main a{color:#000000}
+#nav .subnav_main .dd_red{color:#ff0000}
+#nav .subnav_main .clothes_rt{height:350px;margin-top:30px;width: 337px}
+#nav .subnav_main p{text-align: center;height:100px;line-height: 100px;width:100%}
+#nav .subnav_main p a{color:#000000;}
+/*  banner  */
+#banner_wrap{height:450px;margin-top: 10px}
+#banner{height:450px;position:relative;}
+#banner a{display: block;position:absolute;width:60px;height:60px;z-index: 20;top:195px;opacity: 0.6}
+#banner a:hover{opacity: 1}
+#banner a.pre{left:0;background:#e5e5e5 url(../img/girl_index/to_pre.png) no-repeat center 4px}
+#banner a.next{right:0;background:#e5e5e5 url("../img/girl_index/to_next.png") no-repeat center 4px}
+#banner .scrollimg{width:100%;position: relative;}
+#banner img {border: 0;position: absolute;}
+#banner .bt{width:222px;height:26px;border-radius: 10px;text-align: center;background: rgba(0,0,0,0.5);z-index:2;line-height:26px;margin:0 auto;cursor:pointer}
+#banner .bt span{display:inline-block;width:12px;height:12px;border-radius: 6px;background: #b1a9ac;margin:0 3px}
+#banner .bt .hover{background: white;cursor:pointer}
+/*  sub_banner  */
+#sub_banner{height: 614px;margin-top: 80px;overflow: hidden;margin-bottom: 10px}
+#sub_banner .carousel{height:558px;background: #8ae6e0;margin-top: 25px;}
+#sub_banner .carousel_box{width:100%;height: 558px;position: relative}
+#sub_banner .click{width:18px;height: 32px;position: absolute;top:278px ;z-index: 5}
+#sub_banner .move_prev{left:36px;background: url("../img/girl_index/move_prev.jpg")}
+#sub_banner .move_next{right:36px;background: url(../img/girl_index/move_next.jpg)}
+#sub_banner .scroll_box{width:980px;height: 430px;position: absolute;top:86px;left:85px;overflow: hidden;}
+#sub_banner .img_wrap{width: 980px;height: 430px;position: absolute;left: 980px}
+#sub_banner .img_box{width:320px;height: 430px;margin-right: 10px}
+#sub_banner .img_box a:hover{opacity: 0.8}
+#sub_banner .no_margin{margin-right: 0}
+/*  logo_brand  */
+#logo_brand{height:180px}
+#logo_brand .logo_sort{width:83.33%;height: 179px}
+#logo_brand .trouble_ul{position: absolute;width:960px;}
+#logo_brand li{width:19%;margin-right:1%;margin-bottom: 1%}
+#logo_brand .logo_more{width:16.67%;height: 180px;position: relative;background: url("../img/girl_index/logo-brand-line.png") no-repeat 40px 10px}
+#logo_brand .logo_more .go_same{display: block;width:16px;height:28px;position: absolute;}
+#logo_brand .go_pre{left:20%;top:10px;background: url("../img/girl_index/go_pre.jpg") }
+#logo_brand .go_next{left:60%;top:40px;background: url("../img/girl_index/go_next.jpg")}
+#logo_brand .go_more{width:100%;height: 12px;text-align: center;margin-top:130px;}
+#logo_brand .go_more a{color: #000000;font-size: 16px}
+#logo_brand .go_more a:hover{text-decoration: underline}
+
+/*****     PUBLIC     ******/
+/*  brand public  */
+.content_top{width:100%;height:33px;position: relative}
+.content_top .brand{width:26%;height:31px;line-height: 31px;border:1px solid #000000;text-align: center }
+.content_top .brand span{font-size:15px;font-family: "Microsoft YaHei"  }
+.content_top .brand b{font-family:  SimHei;font-weight: 100}
+.content_top h5{height: 33px;line-height: 33px;padding:0 16px;position:absolute;top:0;right:0 }
+.content_top a{color:#000000}
+.content_top a:hover{text-decoration: underline}
+/*      content public      */
+.content_main{margin-top: 40px;overflow: hidden}
+.content_main a{display: block}
+.content_main a:hover{color:#ffffff}
+.row-1{height:76px;line-height: 76px;background: #f29c9f;color:#ffffff;font-size: 18px;text-align: center;margin-bottom: 10px}
+.row-2{height:76px;line-height: 76px;background: #82d5d9;color:#ffffff;font-size: 18px;text-align: center;margin-bottom: 10px}
+.row-3{height:76px;line-height: 76px;background: #fabf3d;color:#ffffff;font-size: 18px;text-align: center;margin-bottom: 10px}
+.row-4{overflow: hidden}
+.row-4 a{width:50%;height: 41px;line-height: 41px;color:#000000;background: #f8f8f8;text-align: center}
+.row-4 a:hover{color:#000000}
+.gap{margin-bottom: 12px}
+/*  fashion classic_shoes abroad relax   public*/
+#fashion,#classic_shoes,#abroad,#relax{height:578px;margin-top: 64px;overflow: hidden}
+/*  new_brand  */
+#new_brand{height:473px;margin-top: 64px}
+#new_brand a{width:120px;height: 400px;margin-left:5px;overflow: hidden}
+#new_brand a.round_1{width:645px}
+/*  hot  */
+#hot{height:1510px;margin-top: 80px;overflow: hidden}
+#hot .hot_main{margin-top: 40px}
+#hot .hot_a{margin-right: 8px}
+#hot .no_right{margin:0}
+#hot .img_top{cursor: pointer}
+#hot .img_top:hover{box-shadow: 0 0 20px #999}
+/*  new_arrivals  */
+#new_arrivals{margin-top:80px}
+#new_arrivals .new_main{margin-top: 40px}
+#new_arrivals .new_bot{height: 135px;width: 100%;clear:both;padding-top: 60px}
+#new_arrivals .load_more{width:120px;height: 35px;margin:0 auto;background:#000000;display: block;text-align: center;line-height: 35px;color:#ffffff;font-weight: 600;font-size: 14px }
+/*  contract  */
+#contract_wrap{height: 287px;background:#eeeeee}
+#contract{height: 287px}
+#contract .crt_ctn{width:32%;height: 267px;padding-top:20px;margin-left:2%;position: relative}
+#contract .no_mgn_left{margin-left:0}
+#contract .crt_top{height: 200px;background: #ffffff}
+#contract .crt_t_top{height: 56px;width:330px;position: relative;margin:0 auto}
+#contract .div_line{width:100%;height: 1px;background: #dddddd;position: absolute;top:50%}
+#contract h2{font-size: 16px;height: 56px;line-height: 56px;width:145px;text-align:center;background: #ffffff;position: relative;margin:0 auto;z-index: 10}
+#contract h2.crt_2{width:92px}
+#contract h2.crt_3{widt:155px}
+#contract .crt_t_bot{width:330px;margin:0 auto;position: relative}
+#contract dl{width:101px;margin-left:13px;height:122px;padding-top:7px;border:1px solid #dddddd}
+#contract dl.no_mgn_left{margin-left:0}
+#contract img{width:88%;display: block;margin:0 auto}
+#contract dd{text-align: center;margin-top:6px}
+#contract .crt_bot{height:67px;position: relative}
+#contract h5{width:10px;height: 10px;border-radius: 50%;background: #999999;position: absolute;top:50%;left:50%;margin-top:-5px;margin-left:-5px}
+#contract h5:hover{cursor:pointer}
+/*  feedback  */
+#contract li{width:330px;height: 131px;position: absolute}
+#contract li:nth-of-type(2),#contract li:nth-of-type(3){opacity: 0}
+#contract .quest{height: 24px;line-height: 24px}
+#contract p{width:50%;height: 24px;line-height: 24px}
+#contract .to_click{width:100%;height: 35px;clear:both;overflow: hidden}
+#contract .to_submit{display: block;width:55px;height: 24px;line-height: 24px;text-align: center;background: #000000;color:#ffffff;border:0;margin-top:6px}
+#contract .to_submit:hover{cursor:pointer}
+#contract .h51{left:42%;background: #999999}
+#contract .h52{left:50%;background: #ffffff}
+#contract .h53{left:58%;background: #ffffff}
+/*  more products  */
+#contract dl.more_pdt{border:0;margin-top:-7px}
+#contract dl.more_pdt img{width:100%}
+
+
+
+/*  楼梯效果  */
+#stairs{width:48px;position: fixed;top: 150px;left: 50px;border: 1px solid #ff88ae;display: none}
+#stairs .storey_hide{display: none}
+#stairs li{width: 48px;height: 48px;list-style: none;font-size: 12px;color: #666;text-align: center;line-height: 48px;position: relative;cursor: pointer;}
+#stairs a{width:32px;height: 48px;display: block;border-bottom: 1px dashed #ff88ae;margin: 0 auto}
+/*
+#stairs li:nth-of-type(1){background: url(../img/girl_index/stairs_fashion.png) no-repeat center}
+#stairs li:nth-of-type(2){background: url(../img/girl_index/stairs_shoes.png) no-repeat center}
+#stairs li:nth-of-type(3){background: url(../img/girl_index/stairs__abroad.png) no-repeat center}
+#stairs li:nth-of-type(4){background: url(../img/girl_index/stairs_relax.png) no-repeat center}
+#stairs li:nth-of-type(5){background: url(../img/girl_index/stairs_brand.png) no-repeat center}
+#stairs li:nth-of-type(6){background: url(../img/girl_index/stairs_hot.png) no-repeat center}
+#stairs li:nth-of-type(7){background: url(../img/girl_index/stairs_new.png) no-repeat center}
+#stairs li:nth-of-type(8){background: url(../img/girl_index/stairs_top.png) no-repeat center}
+*/
+#stairs .last_storey{background:#ff88ae }
+#stairs .last_storey svg{color:#ffffff}
+#stairs li.s_hover{background:#ff88ae; }
+#stairs li.s_hover svg{color:#ffffff}
+/*  hover效果  */
+#stairs h5{width:180px;height: 200px;border:1px solid #ff88ae;position: absolute;top:-40%;left:200%;background: #ffffff;display: none}
+#stairs h5 .angle{border:1px solid #ff88ae;transform:rotate(-33deg) skewX(30deg); position:absolute; top:8px; left:12px; width:64px; background:#fff; height:56px;}
+#stairs h5 .to_cover{width:160px;height: 160px;background: #ffffff;position: absolute;top: 0;left: 0;}
+#stairs .hover_list{width:160px;height: 200px;margin: 0 auto;position: relative}
+#stairs .hover_list a{display:inline-block;width:48%;height: 32px;margin-top:6px;line-height: 32px;text-align: center;border:0;color:#ffffff;}
+#stairs .hover_list .hover_header{width:100%;background: #ff88ae;}
+#stairs .hover_list a:nth-of-type(2){background: #82d5d9;margin-right:4%}
+#stairs .hover_list a:nth-of-type(3){background: #fabf3d}
+#stairs .hover_list a:nth-of-type(4){background: #acff88;margin-right:4%}
+#stairs .hover_list a:nth-of-type(5){background: #64ffce}
+#stairs .hover_list a:nth-of-type(6){background: #e6b0ff;margin-right:4%}
+#stairs .hover_list a:nth-of-type(7){background: #8aafff}
+#stairs .hover_list a:nth-of-type(8){background: #ff8c55;margin-right:4%}
+#stairs .hover_list a:nth-of-type(9){background: #ffa2c0}
+
+
+/*  footer  */
+#footer_wrap{height: 294px;background: #000000}
+#footer{height: 294px;background: #000000}
+#footer .footer_top{height: 64px;border-bottom:1px solid #262626}
+#footer .footer_top li{float:left;height:64px;line-height: 64px;padding-right:60px;color:#ffffff;font-weight:600 }
+#footer .footer_top li span{color:#ff0000}
+#footer .footer_top li img{width:30px;vertical-align: middle}
+#footer .fo_top_rt{width:230px;padding-left:10px;height: 36px;line-height: 36px;float:right;border:1px solid #262626;margin-top:14px;color:#666666;font-weight: 600}
+#footer .footer_mid{height: 148px;overflow: hidden}
+#footer dl{width:14.285%;float:left;}
+#footer dt{height:32px;line-height: 32px;padding-left:40px}
+#footer dt a{color:#ffffff;font-weight: 600}
+#footer dt a:hover{color:#ff3a3a}
+#footer dd{height:28px;line-height: 28px;padding-left:40px}
+#footer dd a{color:#666666;font-weight: 600}
+#footer dd a:hover{color:#ff3a3a}
+#footer .footer_bot{height: 81px;position: relative ;overflow: hidden;color:#666666}
+#footer .footer_bot img{position: absolute;top:20px;left:20px}
+#footer .footer_bot ul{width:665px;height:12px;position: absolute;top:20px;left: 168px}
+#footer .footer_bot ul li{height:12px;border-right:1px solid #666666;padding:0 20px;float:left}
+#footer .footer_bot ul li a{color:#666666}
+#footer .footer_bot p{width:770px;height:20px;line-height:20px;text-align: center;position: absolute;top:42px;left:168px}

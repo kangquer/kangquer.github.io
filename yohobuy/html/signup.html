@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新用户注册</title>
+    <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/signbase.css">
+    <link rel="shortcut icon" href="../avatar.ico">
+</head>
+<body>
+    <!--  nav  -->
+    <div id="nav_wrap"></div>
+    <!--  main  -->
+    <div id="main_wrap">
+        <div id="main">
+            <div class="main_left left">
+                <div class="img">
+                    <img src="../img/signup_img.jpg" alt="sign_up_img">
+                </div>
+            </div>
+            <div class="main_right left" id="sign">
+                <ul>
+                    <li>
+                        <select class="sign_up">
+                            <option value="area" name="+61">澳大利亚</option>
+                            <option value="area" name="+82">韩国</option>
+                            <option value="area" name="+1">加拿大</option>
+                            <option value="area" name="+60">马来西亚</option>
+                            <option value="area" name="+1">美国</option>
+                            <option value="area" name="+81">日本</option>
+                            <option value="area" name="+65">新加坡</option>
+                            <option value="area" name="+44">英国</option>
+                            <option value="area" selected name="+86">中国</option>
+                            <option value="area" name="+853">中国香港</option>
+                            <option value="area" name="+886">中国台湾</option>
+                            <option value="area" name="+852">中国澳门</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="phone_pre left">+86</span>
+                        <input type="text" placeholder="请输入手机号" id="phone_num" class="phone_num left">
+                    </li>
+                    <li>
+                        <!--maxlength:  the max length you can input-->
+                        <input type="text" id="code" class="code left" placeholder="图形验证码" maxlength="4">
+                        <a href="javascript:void(0)" class="code_a left">换一张</a>
+                        <img src="../img/code_img_1.png" alt="" class="code_img left" >
+                    </li>
+                    <li>
+                        <input type="text" id="check_message" class="check_message left" placeholder="短信验证码" maxlength="4">
+                        <input type="button" class="get_message left" value="获取短信验证码" disabled="disabled">
+                    </li>
+                    <li>
+                        <input type="text" class="set_pass" id="set_pwd" placeholder="设置密码" maxlength="20">
+                        <div class="pwd_length_container">
+                            <span class="pwd_length low">低</span>
+                            <span class="pwd_length mid">中</span>
+                            <span class="pwd_length high">高</span>
+                        </div>
+                        <div class="yes">
+                            <p><span></span> 密码只支持6-20位字符</p>
+                            <p><span></span> 含字母、数字、下划线</p>
+                            <p style="padding-left: 14px">只能以字母开头</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input class="sign_obey" type="checkbox" class="items_check">
+                        <span class="items">我已阅读并遵守<a href="javascript:void(0)">YOHO!BUY 有货服务条款</a></span>
+                    </li>
+                    <li>
+                        <!--<a href="signin.html" style="width:270px;height: 45px;display: block">-->
+                            <input class="register-btn disable" type="submit" value="立即注册" disabled="disabled">
+                        <!--</a>-->
+                    </li>
+                    <li class="quick_sign_in">
+                        我已注册YOHO!BUY 有货账号
+                        <a href="signin.html">快速登录</a>
+                    </li>
+                </ul>
+                <div class="reg_check">
+                    <span class="content"></span>
+                    <b></b>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  footer  -->
+    <div id="footer_wrap"></div>
+    <script src="../js/signup.js"></script>
+    <script>
+        $("#nav_wrap").load("../load/signhead.html");
+        $("#footer_wrap").load("../load/footer.html");
+    </script>
+</body>
+</html>

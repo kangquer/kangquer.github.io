@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<meta charset="UTF-8">-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>YOHOBUY bootstrap</title>
+    <link rel="stylesheet" href="css/my_bootstrap.css">
+    <link rel="stylesheet" href="css/girls.css">
+    <link rel="shortcut icon" href="avatar.ico">
+    <script src="//at.alicdn.com/t/font_krbwd2ygiew2ke29.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/template.js"></script>
+</head>
+<body>
+    <!--  ads  -->
+    <div id="ads_wrap">
+        <div id="ads"></div>
+    </div>
+    <!--  tool  -->
+    <div id="tool_wrap">
+        <div id="tool">
+            <div class="group left">
+                <a href="#">YOHO!BUY 有货</a>
+                <ul class="group_list">
+                    <li><a href="#" name="集团官网" content="YOHO!">YOHO!</a></li>
+                    <li><a href="#" name="男生潮流"  content="YOHO!BOYS">YOHO!BOYS</a></li>
+                    <li><a href="#" name="女生潮流"  content="YOHO!GIRLS">YOHO!GIRLS</a></li>
+                    <li><a href="#" name="物趣分享"  content="YOHO!SHOW">YOHO!SHOW</a></li>
+                    <li><a href="#" name="潮流嘉年华"  content="YO'HOOD">YO'HOOD</a></li>
+                </ul>
+            </div>
+            <div class="sign right">
+                <ul>
+                    <li class="sign_box left">
+                        <p>
+                            <span>Hi~[</span>
+                            <a href="html/signin.html">请登录</a>
+                            <span>] [</span>
+                            <a href="html/signup.html">免费注册</a>
+                            <span>]</span>
+                        </p>
+                        <p>
+                            <span>Hi~ </span>
+                            <a href="//kkstrive.com"></a>
+                            <span>[ <a class="quit" href="javascript:void(0)">退出</a> ]</span>
+                        </p>
+                    </li>
+                    <li class="borderline left"></li>
+                    <li class="myYoho left">
+                        <a href="#">My有货</a>
+                    </li>
+                    <li class="borderline left"></li>
+                    <li class="myOrder left">
+                        <a href="#">我的订单</a>
+                    </li>
+                    <li class="borderline left"></li>
+                    <li class="myStars left">
+                        <a href="#">我的收藏</a>
+                    </li>
+                    <li class="borderline left"></li>
+                    <li class="news left">
+                        <a href="#">消息</a>
+                    </li>
+                    <li class="borderline left"></li>
+                    <li class="phone_yoho left">
+                        <a href="#">手机版</a>
+                        <div class="qr_code">
+                            <div class="qrbox">
+                                <img src="img/girl_index/kkstrive.png" alt="kkstrive">
+                            </div>
+                            <p class="qr_pre">扫描二维码</p>
+                            <p class="qr_pre">打开康恺的博客</p>
+                            <p class="qr_more">
+                                <a href="http://github.com/kkstrive" target="_blank">Go To My Github</a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!--  head  -->
+    <div id="head_wrap">
+        <div id="head">
+            <div class="head_lt">
+                <ul>
+                    <li class="left boy">
+                        <h2>男生</h2>
+                        <h3>BOYS</h3>
+                    </li>
+                    <li class="left girl">
+                        <h2>女生</h2>
+                        <h3>GIRLS</h3>
+                    </li>
+                    <li class="left kid">
+                        <h2>潮童</h2>
+                        <h3>KIDS</h3>
+                    </li>
+                    <li class="left life">
+                        <h2>创意生活</h2>
+                        <h3>LIFE STYLE</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="head_ct">
+                <h1><a href="#"><img src="img/girl_index/logo-en.png" alt=""></a></h1>
+            </div>
+            <div class="head_rt">
+                <div class="search_box left">
+                    <input type="text" class="srh_in left">
+                    <input type="button" class="srh_btn left">
+                </div>
+                <a class="mini_cart" href="html/cart.html">
+                    <div class="go_cart left">
+                        <span class="cart_num">0</span>
+                        <div class="cart_detail">
+                            <p class="empty_cart">您的购物车暂无商品</p>
+                            <div class="sub_cart">
+                                <div class="cart_top"></div>
+                                    <script type="text/html" id="mini_cart_list">
+                                        {{each Data as value i}}
+                                    <dl>
+                                        <dt><img src=img/list/monster%20({{i+1}}).jpg width="45" alt=""></dt>
+                                        <dd>
+                                            <p class="first">{{value.name}}</p>
+                                            <p class="first">颜色：{{value.color}} 尺码：{{value.ruler}}</p>
+                                        </dd>
+                                        <dd>
+                                            <p>{{value.price}} x {{value.num}}</p>
+                                            <p>删除</p>
+                                        </dd>
+                                    </dl>
+                                        {{/each}}
+                                    </script>
+                                <div class="cart_bot">
+                                    <a href="html/cart">去购物车结算</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>    <!--  nav  -->
+    <div id="nav_wrap">
+        <div id="nav">
+           <div class="container">
+               <ul>
+                   <li class="left"><a href="html/list.html">新品到着</a></li>
+                   <li class="left"><a href="html/list.html">品牌一览</a></li>
+                   <li class="left has_hover">
+                       <a href="html/list.html">服饰</a>
+                       <div class="subnav_main">
+                           <div class="clothes_lt left">
+                               <dl class="left">
+                                   <dt><a href="javascript:void(0)">上装</a></dt>
+                                   <dd><a class="dd_red" href="javascript:void(0)">卫衣</a></dd>
+                                   <dd><a href="javascript:void(0)">大衣</a></dd>
+                                   <dd><a href="javascript:void(0)">棉羽</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">夹克</a></dd>
+                                   <dd><a href="javascript:void(0)">毛衣/针织</a></dd>
+                                   <dd><a href="javascript:void(0)">衬衫</a></dd>
+                                   <dt><a href="javascript:void(0)">下装</a></dt>
+                                   <dd><a class="dd_red" href="javascript:void(0)">休闲裤</a></dd>
+                               </dl>
+                               <dl class="left" style="margin-left:50px">
+                                   <dd><a href="javascript:void(0)">牛仔裤</a></dd>
+                                   <dd><a href="javascript:void(0)">打底裤</a></dd>
+                                   <dd><a href="javascript:void(0)">半身裙</a></dd>
+                                   <dd><a href="javascript:void(0)">连衣裙</a></dd>
+                                   <dt><a href="javascript:void(0)">经典款型</a></dt>
+                                   <dd><a href="javascript:void(0)">印花T恤</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">街头卫衣</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">街头衬衫</a></dd>
+                                   <dd><a href="javascript:void(0)">格调裙装</a></dd>
+                               </dl>
+                               <dl class="left" style="border:0;margin-left:50px">
+                                   <dd><a href="javascript:void(0)">铅笔裤</a></dd>
+                                   <dd><a href="javascript:void(0)">复古丹宁</a></dd>
+                                   <dt><a href="javascript:void(0)">热门品牌</a></dt>
+                                   <dd><a href="javascript:void(0)">MO&Co</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">:CHOCOOLATE</a></dd>
+                                   <dd><a href="javascript:void(0)">Stussy</a></dd>
+                                   <dd><a href="javascript:void(0)">LALABOBO</a></dd>
+                                   <dd><a href="javascript:void(0)">AKOP.</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">TKAKASHA</a></dd>
+
+                               </dl>
+                           </div>
+                           <div class="clothes_rt right">
+                               <h3 class="left"><a href="javascript:void(0)"><img src="img/girl_index/sub_nav1.jpg" alt=""></a></h3>
+                               <p class="left"><a href="http://kkstrive.com" target="_blank">高街型搭LOOK</a></p>
+                           </div>
+                       </div>
+                   </li>
+                   <li class="left has_hover">
+                       <a href="html/list.html">鞋履</a>
+                       <div class="subnav_main">
+                           <div class="clothes_lt left">
+                               <dl class="left">
+                                   <dt><a href="javascript:void(0)">鞋屡</a></dt>
+                                   <dd><a class="dd_red" href="javascript:void(0)">卫衣</a></dd>
+                                   <dd><a href="javascript:void(0)">大衣</a></dd>
+                                   <dd><a href="javascript:void(0)">棉羽</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">夹克</a></dd>
+                                   <dd><a href="javascript:void(0)">毛衣/针织</a></dd>
+                                   <dd><a href="javascript:void(0)">衬衫</a></dd>
+                                   <dt><a href="javascript:void(0)">下装</a></dt>
+                                   <dd><a class="dd_red" href="javascript:void(0)">休闲裤</a></dd>
+                               </dl>
+                               <dl class="left" style="margin-left:50px">
+                                   <dd><a href="javascript:void(0)">牛仔裤</a></dd>
+                                   <dd><a href="javascript:void(0)">打底裤</a></dd>
+                                   <dd><a href="javascript:void(0)">半身裙</a></dd>
+                                   <dd><a href="javascript:void(0)">连衣裙</a></dd>
+                                   <dt><a href="javascript:void(0)">经典款型</a></dt>
+                                   <dd><a href="javascript:void(0)">印花T恤</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">街头卫衣</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">街头衬衫</a></dd>
+                                   <dd><a href="javascript:void(0)">格调裙装</a></dd>
+                               </dl>
+                               <dl class="left" style="border:0;margin-left:50px">
+                                   <dd><a href="javascript:void(0)">铅笔裤</a></dd>
+                                   <dd><a href="javascript:void(0)">复古丹宁</a></dd>
+                                   <dt><a href="javascript:void(0)">热门品牌</a></dt>
+                                   <dd><a href="javascript:void(0)">MO&Co</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">:CHOCOOLATE</a></dd>
+                                   <dd><a href="javascript:void(0)">Stussy</a></dd>
+                                   <dd><a href="javascript:void(0)">LALABOBO</a></dd>
+                                   <dd><a href="javascript:void(0)">AKOP.</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">TKAKASHA</a></dd>
+
+                               </dl>
+                           </div>
+                           <div class="clothes_rt right">
+                               <h3 class="left"><a href="javascript:void(0)"><img src="img/girl_index/sub_nav2.jpg" alt=""></a></h3>
+                               <p class="left"><a href="http://kkstrive.com" target="_blank">高街型搭LOOK</a></p>
+                           </div>
+                       </div>
+                   </li>
+                   <li class="left has_hover">
+                       <a href="html/list.html">包袋</a>
+                       <div class="subnav_main">
+                           <div class="clothes_lt left">
+                               <dl class="left">
+                                   <dt><a href="javascript:void(0)">包</a></dt>
+                                   <dd><a class="dd_red" href="javascript:void(0)">卫衣</a></dd>
+                                   <dd><a href="javascript:void(0)">大衣</a></dd>
+                                   <dd><a href="javascript:void(0)">棉羽</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">夹克</a></dd>
+                                   <dd><a href="javascript:void(0)">毛衣/针织</a></dd>
+                                   <dd><a href="javascript:void(0)">衬衫</a></dd>
+                                   <dt><a href="javascript:void(0)">下装</a></dt>
+                                   <dd><a class="dd_red" href="javascript:void(0)">休闲裤</a></dd>
+                               </dl>
+                               <dl class="left" style="margin-left:50px">
+                                   <dd><a href="javascript:void(0)">牛仔裤</a></dd>
+                                   <dd><a href="javascript:void(0)">打底裤</a></dd>
+                                   <dd><a href="javascript:void(0)">半身裙</a></dd>
+                                   <dd><a href="javascript:void(0)">连衣裙</a></dd>
+                                   <dt><a href="javascript:void(0)">经典款型</a></dt>
+                                   <dd><a href="javascript:void(0)">印花T恤</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">街头卫衣</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">街头衬衫</a></dd>
+                                   <dd><a href="javascript:void(0)">格调裙装</a></dd>
+                               </dl>
+                               <dl class="left" style="border:0;margin-left:50px">
+                                   <dd><a href="javascript:void(0)">铅笔裤</a></dd>
+                                   <dd><a href="javascript:void(0)">复古丹宁</a></dd>
+                                   <dt><a href="javascript:void(0)">热门品牌</a></dt>
+                                   <dd><a href="javascript:void(0)">MO&Co</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">:CHOCOOLATE</a></dd>
+                                   <dd><a href="javascript:void(0)">Stussy</a></dd>
+                                   <dd><a href="javascript:void(0)">LALABOBO</a></dd>
+                                   <dd><a href="javascript:void(0)">AKOP.</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">TKAKASHA</a></dd>
+
+                               </dl>
+                           </div>
+                           <div class="clothes_rt right">
+                               <h3 class="left"><a href="javascript:void(0)"><img src="img/girl_index/sub_nav3.jpg" alt=""></a></h3>
+                               <p class="left"><a href="http://kkstrive.com" target="_blank">高街型搭LOOK</a></p>
+                           </div>
+                       </div>
+                   </li>
+                   <li class="left has_hover">
+                       <a href="html/list.html">配饰·其他</a>
+                       <div class="subnav_main">
+                           <div class="clothes_lt left">
+                               <dl class="left">
+                                   <dt><a href="javascript:void(0)">配饰</a></dt>
+                                   <dd><a class="dd_red" href="javascript:void(0)">卫衣</a></dd>
+                                   <dd><a href="javascript:void(0)">大衣</a></dd>
+                                   <dd><a href="javascript:void(0)">棉羽</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">夹克</a></dd>
+                                   <dd><a href="javascript:void(0)">毛衣/针织</a></dd>
+                                   <dd><a href="javascript:void(0)">衬衫</a></dd>
+                                   <dt><a href="javascript:void(0)">下装</a></dt>
+                                   <dd><a class="dd_red" href="javascript:void(0)">休闲裤</a></dd>
+                               </dl>
+                               <dl class="left" style="margin-left:50px">
+                                   <dd><a href="javascript:void(0)">牛仔裤</a></dd>
+                                   <dd><a href="javascript:void(0)">打底裤</a></dd>
+                                   <dd><a href="javascript:void(0)">半身裙</a></dd>
+                                   <dd><a href="javascript:void(0)">连衣裙</a></dd>
+                                   <dt><a href="javascript:void(0)">经典款型</a></dt>
+                                   <dd><a href="javascript:void(0)">印花T恤</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">街头卫衣</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">街头衬衫</a></dd>
+                                   <dd><a href="javascript:void(0)">格调裙装</a></dd>
+                               </dl>
+                               <dl class="left" style="border:0;margin-left:50px">
+                                   <dd><a href="javascript:void(0)">铅笔裤</a></dd>
+                                   <dd><a href="javascript:void(0)">复古丹宁</a></dd>
+                                   <dt><a href="javascript:void(0)">热门品牌</a></dt>
+                                   <dd><a href="javascript:void(0)">MO&Co</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">:CHOCOOLATE</a></dd>
+                                   <dd><a href="javascript:void(0)">Stussy</a></dd>
+                                   <dd><a href="javascript:void(0)">LALABOBO</a></dd>
+                                   <dd><a href="javascript:void(0)">AKOP.</a></dd>
+                                   <dd><a class="dd_red" href="javascript:void(0)">TKAKASHA</a></dd>
+
+                               </dl>
+                           </div>
+                           <div class="clothes_rt right">
+                               <h3 class="left"><a href="javascript:void(0)"><img src="img/girl_index/sub_nav4.jpg" alt=""></a></h3>
+                               <p class="left"><a href="http://kkstrive.com" target="_blank">高街型搭LOOK</a></p>
+                           </div>
+                       </div>
+                   </li>
+                   <li class="left"><a href="html/list.html">领券中心</a></li>
+                   <li class="left"><a href="html/list.html">逛</a></li>
+                   <li class="left"><a href="html/list.html">SALE</a></li>
+               </ul>
+           </div>
+        </div>
+    </div>
+    <!--  banner  -->
+    <div id="banner_wrap">
+        <div id="banner">
+            <a href="javascript:void(0)" class="pre"></a>
+            <a href="javascript:void(0)" class="next"></a>
+            <div class="scrollimg">
+                <img src="img/girl_index/12.jpg" alt="" class="img-responsive">
+                <img src="img/girl_index/2.jpg" alt="" class="img-responsive">
+                <img src="img/girl_index/3.jpg" alt="" class="img-responsive">
+                <img src="img/girl_index/4.jpg" alt="" class="img-responsive">
+                <img src="img/girl_index/9.jpg" alt="" class="img-responsive">
+                <img src="img/girl_index/10.jpg" alt="" class="img-responsive">
+                <img src="img/girl_index/7.jpg" alt="" class="img-responsive">
+                <img src="img/girl_index/11.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="demo" style="width:100%;height:30px;position: absolute;bottom:10px;">
+                <div class="bt">
+                    <span class="hover"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  sub_banner  -->
+    <div id="sub_banner">
+       <div class="content_top">
+           <div class="container brand">
+               <span><b>优选品牌</b> BRAND</span>
+           </div>
+       </div>
+        <div class="carousel">
+            <div class="carousel_box">
+                <a href="javascript:void(0)" class="move_prev click"></a>
+                <a href="javascript:void(0)" class="move_next click"></a>
+                <div class="scroll_box">
+                    <div class="img_wrap">
+                        <div class="img_box left">
+                            <a href="#"><img src="img/girl_index/carousel10.jpg" alt=""></a>
+                        </div>
+                        <div class="img_box left">
+                            <a href="#"><img src="img/girl_index/carousel2.jpg" alt=""></a>
+                        </div>
+                        <div class="img_box left no_margin">
+                            <a href="#"><img src="img/girl_index/carousel3.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="img_wrap">
+                        <div class="img_box left">
+                            <a href="#"><img src="img/girl_index/carousel11.jpg" alt=""></a>
+                        </div>
+                        <div class="img_box left">
+                            <a href="#"><img src="img/girl_index/carousel5.jpg" alt=""></a>
+                        </div>
+                        <div class="img_box left no_margin">
+                            <a href="#"><img src="img/girl_index/carousel6.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="img_wrap">
+                        <div class="img_box left">
+                            <a href="#"><img src="img/girl_index/carousel7.jpg" alt=""></a>
+                        </div>
+                        <div class="img_box left">
+                            <a href="#"><img src="img/girl_index/carousel12.jpg" alt=""></a>
+                        </div>
+                        <div class="img_box left no_margin">
+                            <a href="#"><img src="img/girl_index/carousel9.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  logo_brand  -->
+    <div id="logo_brand">
+        <div class="logo_sort left">
+            <ul class="trouble_ul">
+                <li class="left" datatype="0"><a href="#"><img src="img/girl_index/brand%20(1).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="0"><a href="#"><img src="img/girl_index/brand%20(2).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="0"><a href="#"><img src="img/girl_index/brand%20(3).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="0"><a href="#"><img src="img/girl_index/brand%20(4).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="0"><a href="#"><img src="img/girl_index/brand%20(5).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="0"><a href="#"><img src="img/girl_index/brand%20(6).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="0"><a href="#"><img src="img/girl_index/brand%20(7).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="0"><a href="#"><img src="img/girl_index/brand%20(8).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="0"><a href="#"><img src="img/girl_index/brand%20(9).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="0"><a href="#"><img src="img/girl_index/brand%20(10).jpg" class="img-responsive" alt=""></a></li>
+            </ul>
+            <ul class="trouble_ul">
+                <li class="left" datatype="1"><a href="#"><img src="img/girl_index/brand%20(11).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="1"><a href="#"><img src="img/girl_index/brand%20(12).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="1"><a href="#"><img src="img/girl_index/brand%20(13).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="1"><a href="#"><img src="img/girl_index/brand%20(14).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="1"><a href="#"><img src="img/girl_index/brand%20(15).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="1"><a href="#"><img src="img/girl_index/brand%20(16).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="1"><a href="#"><img src="img/girl_index/brand%20(17).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="1"><a href="#"><img src="img/girl_index/brand%20(18).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="1"><a href="#"><img src="img/girl_index/brand%20(19).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="1"><a href="#"><img src="img/girl_index/brand%20(20).jpg" class="img-responsive" alt=""></a></li>
+            </ul>
+            <ul class="trouble_ul">
+                <li class="left" datatype="2"><a href="#"><img src="img/girl_index/brand%20(21).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="2"><a href="#"><img src="img/girl_index/brand%20(22).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="2"><a href="#"><img src="img/girl_index/brand%20(23).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="2"><a href="#"><img src="img/girl_index/brand%20(24).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="2"><a href="#"><img src="img/girl_index/brand%20(25).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="2"><a href="#"><img src="img/girl_index/brand%20(26).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="2"><a href="#"><img src="img/girl_index/brand%20(27).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="2"><a href="#"><img src="img/girl_index/brand%20(28).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="2"><a href="#"><img src="img/girl_index/brand%20(29).jpg" class="img-responsive" alt=""></a></li>
+                <li class="left" datatype="2"><a href="#"><img src="img/girl_index/brand%20(30).jpg" class="img-responsive" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="logo_more left">
+            <a href="javascript:void(0)" class="go_pre go_same"></a>
+            <a href="javascript:void(0)" class="go_next go_same"></a>
+            <p class="go_more"><a href="http://kkstrive.com" target="_blank">MORE</a></p>
+        </div>
+    </div>
+    <!--  fashion  -->
+    <div id="fashion" class="storey">
+        <div class="content_top">
+            <div class="container brand">
+                <span><b>潮流时尚</b></span>
+            </div>
+            <h5><a href="http://kkstrive.com" target="_blank">MORE</a></h5>
+        </div>
+        <div class="content_main container">
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <a href="javascript:void(0)" class="row-1">JACKET</a>
+                <a href="javascript:void(0)" class="row-2">HOODIES</a>
+                <a href="javascript:void(0)" class="row-3">PANTS</a>
+                <div class="row-4">
+                    <a href="javascript:void(0)" class="sorts left">5折提前抢</a>
+                    <a href="javascript:void(0)" class="sorts left">大衣/风衣</a>
+                    <a href="javascript:void(0)" class="sorts left">衬衫</a>
+                    <a href="javascript:void(0)" class="sorts left">卫衣</a>
+                    <a href="javascript:void(0)" class="sorts left">夹克</a>
+                    <a href="javascript:void(0)" class="sorts left">针织</a>
+                    <a href="javascript:void(0)" class="sorts left">T恤</a>
+                    <a href="javascript:void(0)" class="sorts left">休闲运动</a>
+                    <a href="javascript:void(0)" class="sorts left">暗黑界头</a>
+                    <a href="javascript:void(0)" class="sorts left">复古学院</a>
+                    <a href="javascript:void(0)" class="sorts left">日韩甜美</a>
+                    <a href="javascript:void(0)" class="sorts left">MORE</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <a href="javascript:void(0)">
+                    <img src="img/girl_index/public_5.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <a class="gap" href="javascript:void(0)"><img src="img/girl_index/products_1.jpg" class="row-5" alt=""></a>
+                <a  href="javascript:void(0)"><img src="img/girl_index/products_2.jpg" class="row-5" alt=""></a>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <a class="gap" href="javascript:void(0)"><img src="img/girl_index/products_3.jpg" class="row-5" alt=""></a>
+                <a  href="javascript:void(0)"><img src="img/girl_index/products_4.jpg" class="row-5" alt=""></a>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <a class="gap" href="javascript:void(0)"><img src="img/girl_index/products_5.jpg" class="row-5" alt=""></a>
+                <a  href="javascript:void(0)"><img src="img/girl_index/products_6.jpg" class="row-5" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!--  classic_shoes-->
+    <div id="classic_shoes" class="storey">
+        <div class="content_top">
+            <div class="container brand">
+                <span><b>经典鞋包</b></span>
+            </div>
+            <h5><a href="http://kkstrive.com" target="_blank">MORE</a></h5>
+        </div>
+        <div class="content_main container">
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="javascript:void(0)" class="row-1">BOOTS</a>
+                    <a href="javascript:void(0)" class="row-2">BACKPACKS</a>
+                    <a href="javascript:void(0)" class="row-3">HATS</a>
+                    <div class="row-4">
+                        <a href="javascript:void(0)" class="sorts left">限时夯售</a>
+                        <a href="javascript:void(0)" class="sorts left">休闲裤</a>
+                        <a href="javascript:void(0)" class="sorts left">牛仔裤</a>
+                        <a href="javascript:void(0)" class="sorts left">运动裤</a>
+                        <a href="javascript:void(0)" class="sorts left">打底裤</a>
+                        <a href="javascript:void(0)" class="sorts left">连衣裙</a>
+                        <a href="javascript:void(0)" class="sorts left">半身裙</a>
+                        <a href="javascript:void(0)" class="sorts left">窄脚裤</a>
+                        <a href="javascript:void(0)" class="sorts left">哈伦裤</a>
+                        <a href="javascript:void(0)" class="sorts left">中性白搭</a>
+                        <a href="javascript:void(0)" class="sorts left">阔腿裤</a>
+                        <a href="javascript:void(0)" class="sorts left">MORE</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="javascript:void(0)">
+                        <img src="img/girl_index/public_6.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="gap" href="javascript:void(0)"><img src="img/girl_index/products_7.jpg" class="row-5" alt=""></a>
+                    <a href="javascript:void(0)"><img src="img/girl_index/products_8.jpg" class="row-5" alt=""></a>
+                </div>
+                <div class="col-md-2">
+                    <a class="gap" href="javascript:void(0)"><img src="img/girl_index/products_9.jpg" class="row-5" alt=""></a>
+                    <a href="javascript:void(0)"><img src="img/girl_index/products_10.jpg" class="row-5" alt=""></a>
+                </div>
+                <div class="col-md-2">
+                    <a class="gap" href="javascript:void(0)"><img src="img/girl_index/products_11.jpg" class="row-5" alt=""></a>
+                    <a href="javascript:void(0)"><img src="img/girl_index/products_12.jpg" class="row-5" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  abroad-->
+    <div id="abroad" class="storey">
+        <div class="content_top">
+            <div class="container brand">
+                <span><b>欧美</b></span>
+            </div>
+            <h5><a href="http://kkstrive.com" target="_blank">MORE</a></h5>
+        </div>
+        <div class="content_main container">
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <a href="javascript:void(0)" class="row-1">BOOTS</a>
+                <a href="javascript:void(0)" class="row-2">BACKPACKS</a>
+                <a href="javascript:void(0)" class="row-3">HATS</a>
+                <div class="row-4">
+                    <a href="javascript:void(0)" class="sorts left">限时夯售</a>
+                    <a href="javascript:void(0)" class="sorts left">休闲裤</a>
+                    <a href="javascript:void(0)" class="sorts left">牛仔裤</a>
+                    <a href="javascript:void(0)" class="sorts left">运动裤</a>
+                    <a href="javascript:void(0)" class="sorts left">打底裤</a>
+                    <a href="javascript:void(0)" class="sorts left">连衣裙</a>
+                    <a href="javascript:void(0)" class="sorts left">半身裙</a>
+                    <a href="javascript:void(0)" class="sorts left">窄脚裤</a>
+                    <a href="javascript:void(0)" class="sorts left">哈伦裤</a>
+                    <a href="javascript:void(0)" class="sorts left">中性白搭</a>
+                    <a href="javascript:void(0)" class="sorts left">阔腿裤</a>
+                    <a href="javascript:void(0)" class="sorts left">MORE</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <a href="javascript:void(0)">
+                    <img src="img/girl_index/public_7.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <a class="gap" href="javascript:void(0)"><img src="img/girl_index/products_7.jpg" class="row-5" alt=""></a>
+                <a href="javascript:void(0)"><img src="img/girl_index/products_8.jpg" class="row-5" alt=""></a>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <a class="gap" href="javascript:void(0)"><img src="img/girl_index/products_9.jpg" class="row-5" alt=""></a>
+                <a href="javascript:void(0)"><img src="img/girl_index/products_10.jpg" class="row-5" alt=""></a>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <a class="gap" href="javascript:void(0)"><img src="img/girl_index/products_11.jpg" class="row-5" alt=""></a>
+                <a href="javascript:void(0)"><img src="img/girl_index/products_12.jpg" class="row-5" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!--  relax-->
+    <div id="relax" class="storey">
+        <div class="content_top">
+            <div class="container brand">
+                <span><b>休闲</b></span>
+            </div>
+            <h5><a href="http://kkstrive.com" target="_blank">MORE</a></h5>
+        </div>
+        <div class="content_main container">
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <a href="javascript:void(0)" class="row-1">BOOTS</a>
+                <a href="javascript:void(0)" class="row-2">BACKPACKS</a>
+                <a href="javascript:void(0)" class="row-3">HATS</a>
+                <div class="row-4">
+                    <a href="javascript:void(0)" class="sorts left">限时夯售</a>
+                    <a href="javascript:void(0)" class="sorts left">休闲裤</a>
+                    <a href="javascript:void(0)" class="sorts left">牛仔裤</a>
+                    <a href="javascript:void(0)" class="sorts left">运动裤</a>
+                    <a href="javascript:void(0)" class="sorts left">打底裤</a>
+                    <a href="javascript:void(0)" class="sorts left">连衣裙</a>
+                    <a href="javascript:void(0)" class="sorts left">半身裙</a>
+                    <a href="javascript:void(0)" class="sorts left">窄脚裤</a>
+                    <a href="javascript:void(0)" class="sorts left">哈伦裤</a>
+                    <a href="javascript:void(0)" class="sorts left">中性白搭</a>
+                    <a href="javascript:void(0)" class="sorts left">阔腿裤</a>
+                    <a href="javascript:void(0)" class="sorts left">MORE</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-4">
+                <a href="javascript:void(0)">
+                    <img src="img/girl_index/public_8.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <a class="gap" href="javascript:void(0)"><img src="img/girl_index/products_7.jpg" class="row-5" alt=""></a>
+                <a href="javascript:void(0)"><img src="img/girl_index/products_8.jpg" class="row-5" alt=""></a>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <a class="gap" href="javascript:void(0)"><img src="img/girl_index/products_9.jpg" class="row-5" alt=""></a>
+                <a href="javascript:void(0)"><img src="img/girl_index/products_10.jpg" class="row-5" alt=""></a>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-2">
+                <a class="gap" href="javascript:void(0)"><img src="img/girl_index/products_11.jpg" class="row-5" alt=""></a>
+                <a href="javascript:void(0)"><img src="img/girl_index/products_12.jpg" class="row-5" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!--  new_brand  -->
+    <div id="new_brand" class="storey">
+        <div class="content_top">
+            <div class="container brand">
+                <span><b>新品牌入驻</b> NEW</span>
+            </div>
+            <h5><a href="http://kkstrive.com" target="_blank">MORE</a></h5>
+        </div>
+        <div class="content_main">
+                <a href="javascript:void(0)" class="left round_1 accordion"><img src="img/girl_index/new_brand1.jpg"></a>
+                <a href="javascript:void(0)" class="left accordion"><img src="img/girl_index/new_brand2.jpg"></a>
+                <a href="javascript:void(0)" class="left accordion"><img src="img/girl_index/new_brand3.jpg"></a>
+                <a href="javascript:void(0)" class="left accordion"><img src="img/girl_index/new_brand4.jpg"></a>
+                <a href="javascript:void(0)" class="left accordion"><img src="img/girl_index/new_brand5.jpg"></a>
+        </div>
+    </div>
+    <!--  hot  -->
+    <div id="hot" class="storey">
+        <div class="content_top">
+            <div class="container brand">
+                <span><b>人气单品</b> TOP100</span>
+            </div>
+            <h5><a href="http://kkstrive.com" target="_blank">MORE</a></h5>
+        </div>
+        <div class="hot_main"></div>
+        <div class="hot_bot">
+            <a class="left hot_a" href="http://kkstrive.com" target="_blank">
+                <img src="img/girl_index/hot%20(1).jpg" alt="">
+            </a>
+            <a class="left hot_a" href="http://kkstrive.com" target="_blank">
+                <img src="img/girl_index/hot%20(2).jpg" alt="">
+            </a>
+            <a class="left hot_a" href="http://kkstrive.com" target="_blank">
+                <img src="img/girl_index/hot%20(3).jpg" alt="">
+            </a>
+            <a class="left hot_a" href="http://kkstrive.com" target="_blank">
+                <img src="img/girl_index/hot%20(4).jpg" alt="">
+            </a>
+            <a class="left hot_a" href="http://kkstrive.com" target="_blank">
+                <img src="img/girl_index/hot%20(5).jpg" alt="">
+            </a>
+            <a class="left hot_a no_right" href="http://kkstrive.com" target="_blank">
+                <img src="img/girl_index/hot%20(6).jpg" alt="">
+            </a>
+        </div>
+    </div>
+    <script src="js/ajax_getdata.js"></script>
+    <!--  new arrivals  -->
+    <div id="new_arrivals" class="storey">
+        <div class="content_top">
+            <div class="container brand">
+                <span><b>最新上架</b> NEW ARRIVALS</span>
+                <h5><a href="http://kkstrive.com" target="_blank">MORE</a></h5>
+            </div>
+        </div>
+        <div class="new_main"></div>
+        <!--<script src="js/ajax_arrival.js"></script>-->
+        <div class="new_bot">
+            <a href="http://kkstrive.com" target="_blank" class="load_more">查看更多</a>
+        </div>
+
+    </div>
+    <!--  contract  -->
+    <div id="contract_wrap" class="storey">
+        <div id="contract">
+            <div class="crt_ctn left no_mgn_left">
+                <div class="crt_top">
+                    <div class="crt_t_top">
+                        <div class="div_line"></div>
+                        <h2>有货SERVICES</h2>
+                    </div>
+                    <div class="crt_t_bot">
+                        <dl class="left no_mgn_left">
+                            <dt><img src="img/girl_index/kkstrive.png" alt=""></dt>
+                            <dd>YOHO!BUY有货</dd>
+                        </dl>
+                        <dl class="left">
+                            <dt><img src="img/girl_index/kkstrive.png" alt=""></dt>
+                            <dd>微信</dd>
+                        </dl>
+                        <dl class="left">
+                            <dt><img src="img/girl_index/kkstrive.png" alt=""></dt>
+                            <dd>微博</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="crt_bot">
+                    <h5></h5>
+                </div>
+            </div>
+            <div class="crt_ctn left">
+                <div class="crt_top">
+                    <div class="crt_t_top">
+                        <div class="div_line"></div>
+                        <h2 class="crt_2">意见反馈</h2>
+                    </div>
+                    <div class="crt_t_bot">
+                       <ul>
+                           <li class="test">
+                               <div class="quest">您喜欢有货的新版吗？</div>
+                               <div class="selection">
+                                   <p class="left"><input type="radio" name="like"> 非常喜欢</p>
+                                   <p class="left"><input type="radio" name="like"> 喜欢</p>
+                                   <p class="left"><input type="radio" name="like"> 一般般</p>
+                                   <p class="left"><input type="radio" name="like"> 不喜欢</p>
+                                   <p class="left"><input type="radio" name="like"> 非常不喜欢</p>
+                               </div>
+                               <div class="to_click">
+                                   <input type="submit" class="to_submit" value="提交">
+                               </div>
+                           </li>
+                           <li>
+                               <div class="quest">您可以方便的找到想查看的内容吗？</div>
+                               <div class="selection">
+                                   <p class="left"><input type="radio" name="like"> 非常方便</p>
+                                   <p class="left"><input type="radio" name="like"> 方便</p>
+                                   <p class="left"><input type="radio" name="like"> 一般般</p>
+                                       <p class="left"><input type="radio" name="like"> 不方便</p>
+                                   <p class="left"><input type="radio" name="like"> 非常不方便</p>
+                               </div>
+                               <div class="to_click">
+                                   <input type="submit" class="to_submit" value="提交">
+                               </div>
+                           </li>
+                           <li>
+                               <div class="quest">您对新版还有哪些意见或建议？</div>
+                               <textarea name="" id="" cols="50" rows="4"></textarea>
+                               <div class="to_click">
+                                   <input type="submit" class="to_submit" value="提交">
+                               </div>
+                           </li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="crt_bot">
+                    <h5 class="h51"></h5>
+                    <h5 class="h52"></h5>
+                    <h5 class="h53"></h5>
+                </div>
+            </div>
+            <div class="crt_ctn left">
+                <div class="crt_top">
+                    <div class="crt_t_top">
+                        <div class="div_line"></div>
+                        <h2 class="crt_3">更多YOHO!产品</h2>
+                    </div>
+                    <div class="crt_t_bot">
+                        <dl class="left no_mgn_left more_pdt">
+                            <dt><a href="http://kkstrive.com" target="_blank"><img src="img/girl_index/more_pdt1.png" alt=""></a></dt>
+                        </dl>
+                        <dl class="left more_pdt">
+                            <dt><a href="http://kkstrive.com" target="_blank"><img src="img/girl_index/more_pdt2.png" alt=""></a></dt>
+                        </dl>
+                        <dl class="left more_pdt">
+                            <dt><a href="http://kkstrive.com" target="_blank"><img src="img/girl_index/more_pdt3.png" alt=""></a></dt>
+                        </dl>
+                    </div>
+                </div>
+                <div class="crt_bot">
+                    <h5></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  storey    -->
+    <div id="stairs">
+        <!--<ul>
+            <li><span class="bg_icon"></span><span class="storey_hide">Fashion</span></li>
+            <li><span class="bg_icon"><span class="storey_hide">Classic</span></span></li>
+            <li><span class="bg_icon"><span class="storey_hide">Abroad</span></span></li>
+            <li><span class="bg_icon"><span class="storey_hide">Relax</span></span></li>
+            <li><span class="bg_icon"><span class="storey_hide">NewBrands</span></span></li>
+            <li><span class="bg_icon"><span class="storey_hide">Top 100</span></span></li>
+            <li><span class="bg_icon"><span class="storey_hide">Arrivals</span></span></li>
+            <li><span class="bg_icon"><span class="storey_hide">To Top</span></span></li>
+        </ul>-->
+        <ul>
+            <li>
+                <a href="javascript:void(0)"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-chaopaibaokuan"></use>
+                </svg></a>
+                <span class="storey_hide">Fashion</span>
+                <h5>
+                    <div class="angle"></div>
+                    <span class="to_cover"></span>
+                    <div class="hover_list">
+                        <a class="left hover_header" href="javascript:void(0)">潮流时尚</a>
+                        <a class="left" href="javascript:void(0)">衬衫</a>
+                        <a class="left" href="javascript:void(0)">针织</a>
+                        <a class="left" href="javascript:void(0)">复古学院</a>
+                        <a class="left" href="javascript:void(0)">日韩甜美</a>
+                        <a class="left" href="javascript:void(0)">衬衫</a>
+                        <a class="left" href="javascript:void(0)">针织</a>
+                        <a class="left" href="javascript:void(0)">复古学院</a>
+                        <a class="left" href="javascript:void(0)">日韩甜美</a>
+
+                    </div>
+                </h5>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-guoji"></use>
+                </svg></a>
+                <span class="storey_hide">Abroad</span>
+                <h5>
+                    <div class="angle"></div>
+                    <span class="to_cover"></span>
+                    <div class="hover_list">
+                        <a class="left hover_header" href="javascript:void(0)">经典鞋包</a>
+                        <a class="left" href="javascript:void(0)">衬衫</a>
+                        <a class="left" href="javascript:void(0)">针织</a>
+                        <a class="left" href="javascript:void(0)">复古学院</a>
+                        <a class="left" href="javascript:void(0)">日韩甜美</a>
+                        <a class="left" href="javascript:void(0)">衬衫</a>
+                        <a class="left" href="javascript:void(0)">针织</a>
+                        <a class="left" href="javascript:void(0)">复古学院</a>
+                        <a class="left" href="javascript:void(0)">日韩甜美</a>
+
+                    </div>
+                </h5>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-nvxie"></use>
+                </svg></a>
+                <span class="storey_hide">Classic</span>
+                <h5>
+                    <div class="angle"></div>
+                    <span class="to_cover"></span>
+                    <div class="hover_list">
+                        <a class="left hover_header" href="javascript:void(0)">欧美</a>
+                        <a class="left" href="javascript:void(0)">衬衫</a>
+                        <a class="left" href="javascript:void(0)">针织</a>
+                        <a class="left" href="javascript:void(0)">复古学院</a>
+                        <a class="left" href="javascript:void(0)">日韩甜美</a>
+                        <a class="left" href="javascript:void(0)">衬衫</a>
+                        <a class="left" href="javascript:void(0)">针织</a>
+                        <a class="left" href="javascript:void(0)">复古学院</a>
+                        <a class="left" href="javascript:void(0)">日韩甜美</a>
+
+                    </div>
+                </h5>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-womanbikini"></use>
+                </svg></a>
+                <span class="storey_hide">Relax</span>
+                <h5>
+                    <div class="angle"></div>
+                    <span class="to_cover"></span>
+                    <div class="hover_list">
+                        <a class="left hover_header" href="javascript:void(0)">休闲</a>
+                        <a class="left" href="javascript:void(0)">衬衫</a>
+                        <a class="left" href="javascript:void(0)">针织</a>
+                        <a class="left" href="javascript:void(0)">复古学院</a>
+                        <a class="left" href="javascript:void(0)">日韩甜美</a>
+                        <a class="left" href="javascript:void(0)">衬衫</a>
+                        <a class="left" href="javascript:void(0)">针织</a>
+                        <a class="left" href="javascript:void(0)">复古学院</a>
+                        <a class="left" href="javascript:void(0)">日韩甜美</a>
+
+                    </div>
+                </h5>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><svg class="icon" aria-hidden="true" style="font-size: 26px">
+                    <use xlink:href="#icon-brand"></use>
+                </svg></a>
+                <span class="storey_hide">NewBrands</span>
+                <h5>
+                    <div class="angle"></div>
+                    <span class="to_cover"></span>
+                    <div class="hover_list">
+                        <a class="left hover_header" href="javascript:void(0)">新品牌入驻</a>
+                        <a class="left" href="javascript:void(0)">衬衫</a>
+                        <a class="left" href="javascript:void(0)">针织</a>
+                        <a class="left" href="javascript:void(0)">复古学院</a>
+                        <a class="left" href="javascript:void(0)">日韩甜美</a>
+                        <a class="left" href="javascript:void(0)">衬衫</a>
+                        <a class="left" href="javascript:void(0)">针织</a>
+                        <a class="left" href="javascript:void(0)">复古学院</a>
+                        <a class="left" href="javascript:void(0)">日韩甜美</a>
+
+                    </div>
+                </h5>
+            </li>
+            <li>
+                <a href="javascript:void(0)"><svg class="icon" aria-hidden="true" style="font-size: 26px">
+                    <use xlink:href="#icon-huo"></use>
+                </svg></a>
+                <span class="storey_hide">Top 100</span>
+                <h5>
+                    <div class="angle"></div>
+                    <span class="to_cover"></span>
+                    <div class="hover_list">
+                        <a class="left hover_header" href="javascript:void(0)">Top 100</a>
+                        <a class="left" href="javascript:void(0)">衬衫</a>
+                        <a class="left" href="javascript:void(0)">针织</a>
+                        <a class="left" href="javascript:void(0)">复古学院</a>
+                        <a class="left" href="javascript:void(0)">日韩甜美</a>
+                        <a class="left" href="javascript:void(0)">衬衫</a>
+                        <a class="left" href="javascript:void(0)">针织</a>
+                        <a class="left" href="javascript:void(0)">复古学院</a>
+                        <a class="left" href="javascript:void(0)">日韩甜美</a>
+
+                    </div>
+                </h5>
+            </li>
+            <li>
+                <a href="javascript:void(0)" style="border:0"><svg class="icon" aria-hidden="true" style="font-size: 26px">
+                    <use xlink:href="#icon-new"></use>
+                </svg></a>
+                <span class="storey_hide">Arrivals</span>
+                <h5>
+                    <div class="angle"></div>
+                    <span class="to_cover"></span>
+                    <div class="hover_list">
+                        <a class="left hover_header" href="javascript:void(0)">最新上架</a>
+                        <a class="left" href="javascript:void(0)">衬衫</a>
+                        <a class="left" href="javascript:void(0)">针织</a>
+                        <a class="left" href="javascript:void(0)">复古学院</a>
+                        <a class="left" href="javascript:void(0)">日韩甜美</a>
+                        <a class="left" href="javascript:void(0)">衬衫</a>
+                        <a class="left" href="javascript:void(0)">针织</a>
+                        <a class="left" href="javascript:void(0)">复古学院</a>
+                        <a class="left" href="javascript:void(0)">日韩甜美</a>
+
+                    </div>
+                </h5>
+            </li>
+            <li class="last_storey">
+                <a href="javascript:void(0)"><svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-top"></use>
+                </svg></a>
+                <span class="storey_hide">To Top</span>
+                <h5>
+                    <div class="angle"></div>
+                    <span class="to_cover"></span>
+                    <div class="hover_list">
+                        <a class="left hover_header" href="javascript:void(0)">5折提前抢</a>
+                        <a class="left" href="javascript:void(0)">衬衫</a>
+                        <a class="left" href="javascript:void(0)">针织</a>
+                        <a class="left" href="javascript:void(0)">复古学院</a>
+                        <a class="left" href="javascript:void(0)">日韩甜美</a>
+                        <a class="left" href="javascript:void(0)">衬衫</a>
+                        <a class="left" href="javascript:void(0)">针织</a>
+                        <a class="left" href="javascript:void(0)">复古学院</a>
+                        <a class="left" href="javascript:void(0)">日韩甜美</a>
+
+                    </div>
+                </h5>
+            </li>
+        </ul>
+    </div>
+    <!--  footer  -->
+    <div id="footer_wrap"></div>
+    <script>
+        $("#footer_wrap").load("load/indexfooter.html");
+    </script>
+    <script src="js/girls.js"></script>
+</body>
+</html>

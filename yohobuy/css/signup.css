@@ -1,0 +1,47 @@
+/*nav*/
+#nav_wrap{height: 66px;border-bottom:2px solid #222222}
+#nav{height: 66px}
+#nav h1{width:171px;height:40px;float:left;margin-top:10px}
+#nav li{padding:0 10px;height:28px;line-height: 28px;margin-top:19px;position: relative}
+#nav .to_bot{padding-right:20px;background: url("../img/girl_index/to_bot.png") no-repeat right 4px top 8px}
+#nav li a{color:#000000;font-weight: 600;text-decoration: none}
+#nav ol{width:75px;height: 58px;position: absolute;top:100%;left:0;display: none}
+#nav ol li{margin-top:0;background:#eaeceb;height:28px;line-height: 28px;text-align: center;border-top:1px solid #dddddd;}
+/*main*/
+#main_wrap{height:652px;}
+#main{height: 652px;}
+#main .main_left{width:498px;height: 418px;margin-top: 128px; border-right:1px solid #dfdfdf;overflow: hidden;}
+#main .main_left .img{width:252px;height: 190px;margin-left:84px;margin-top: 100px}
+#main .main_right{width:500px;position: relative;padding-top:129px}
+#main .main_right ul{ width:500px;height:418px;padding-left: 84px;}
+#main .main_right ul li { list-style-type: none; margin-bottom: 25px; overflow: hidden; }
+#main .main_right ul li .sign_up { width: 130px; height: 28px; border-color: #c1c1c1; color: #c1c1c1; font-size: 14px; font-weight: 600; padding: 5px 0; }
+#main .main_right .sign_up option { font-weight: 600; font-size: 12px; }
+#main .main_right .phone_pre { width: 58px; height: 43px; display: inline-block; border: 1px solid #dbdbdb; border-right: 0; line-height: 43px; text-align: center; font-size: 16px; color: #b9b9b9; }
+#main .main_right .phone_num { width: 209px; height: 43px; border: 1px solid #dbdbdb; padding-left: 10px; font-size: 14px; color: #a9a9a9; }
+#main .main_right .code, #main .main_right .check_message { width: 150px; height: 43px; border: 1px solid #dbdbdb; color: #a9a9a9; font-size: 16px; padding-left: 10px; }
+#main .main_right .code_a { margin-left: 8px; color: #ff1901; line-height: 43px; }
+#main .main_right .code_img { width: 90px; height: 37px}
+#main .main_right .get_message { width: 100px; height: 45px; border: 0; color: #ffffff; font-size: 12px; font-weight: 600; text-align: center; margin-left: 8px; background: #555555; }
+#main .main_right .set_pass { width: 258px; height: 43px; border: 1px solid #dbdbdb; color: #a9a9a9; font-size: 16px; padding-left: 10px; margin-bottom: 10px; }
+#main .main_right .pwd_length_container { width: 270px; height: 16px; text-align: right; }
+#main .main_right .pwd_length { width: 32px; height: 16px; display: inline-block; text-align: center; background: #e8e8e8; color: #babbbb; }
+#main .main_right .items_check {border: 1px solid #c8c8c8; }
+#main .main_right .items { color: #cacaca; padding-left: 6px; }
+
+#main .main_right a { color: #ff1901; }
+
+#main .main_right .register-btn { width: 270px; height: 45px; background: #555555; border: 0; color: #ffffff; font-size: 18px; font-weight: 600; }
+
+#main .main_right .quick_sign_in { font-size: 13px; padding-left: 36px; color: #c1c8c6; }
+
+
+
+#main .main_right .reg_check{height:30px;background: #ffebeb;border:1px solid #ffbdbe;position: absolute;text-align: center;line-height:30px;color:#ff3a3a;padding:0 10px;display: none}
+#main .main_right .reg_check b { display: block; width: 17px; height: 9px; position: absolute; top: 30px; left: 20px; background-image: url("../img/bg_icon.png"); background-position: -538px -29px; }
+#main .main_right ul input:focus{outline: none}
+
+#main .yes{width:145px;padding-left: 14px;height: 72px;padding-top:5px;position:absolute;top: 380px;left:360px;background: url("../img/bg_icon.png") no-repeat -142px -153px;display: none;color:#bdbdbd }
+#main .yes p{height:24px;line-height: 24px;}
+#main .yes p:nth-of-type(1) span{display: inline-block;width:12px;height: 12px;background: url("../img/bg_icon.png") no-repeat -491px -30px}
+#main .yes p:nth-of-type(2) span{display: inline-block;width:12px;height: 12px;background: url("../img/bg_icon.png") no-repeat -491px -30px}
